@@ -66,6 +66,8 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   return Object.keys(areasData).map((slug) => ({
     area: slug,

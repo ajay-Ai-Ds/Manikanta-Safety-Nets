@@ -138,14 +138,18 @@ export default function Footer() {
               { name: "HSR Layout", slug: "hsr-layout" },
               { name: "Electronic City", slug: "electronic-city" },
               { name: "Marathahalli", slug: "marathahalli" },
+              { name: "Bellandur", slug: "bellandur" },
+              { name: "Sarjapur Road", slug: "sarjapur-road" },
               { name: "Jayanagar", slug: "jayanagar" },
-              { name: "Yelahanka", slug: "yelahanka" },
               { name: "JP Nagar", slug: "jp-nagar" },
               { name: "Bannerghatta Road", slug: "bannerghatta-road" },
-              { name: "Sarjapur Road", slug: "sarjapur-road" },
-              { name: "BTM Layout", slug: "btm-layout" },
               { name: "Hebbal", slug: "hebbal" },
-              { name: "RHSR Layout", slug: "rt-nagar" },
+              { name: "Yelahanka", slug: "yelahanka" },
+              { name: "Thanisandra", slug: "thanisandra" },
+              { name: "Hennur Road", slug: "hennur-road" },
+              { name: "Kanakapura Road", slug: "kanakapura-road" },
+              { name: "RR Nagar", slug: "rajarajeshwari-nagar" },
+              { name: "RT Nagar", slug: "rt-nagar" },
             ].map((city) => (
               <Link
                 key={city.slug}
@@ -155,6 +159,12 @@ export default function Footer() {
                 {city.name}
               </Link>
             ))}
+            <Link
+              href="/areas"
+              className="text-[#E8972F] font-bold hover:underline flex items-center gap-1"
+            >
+              <span>+ 92 More Areas</span>
+            </Link>
           </div>
         </div>
 

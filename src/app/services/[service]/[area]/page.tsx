@@ -76,14 +76,16 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const serviceKeys = Object.keys(servicesData);
-  const areaKeys = Object.keys(areasData);
+  const topAreas = Object.keys(areasData).slice(0, 25);
 
   const params: { service: string; area: string }[] = [];
 
   for (const service of serviceKeys) {
-    for (const area of areaKeys) {
+    for (const area of topAreas) {
       params.push({ service, area });
     }
   }
