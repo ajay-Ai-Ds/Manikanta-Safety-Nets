@@ -37,9 +37,17 @@ export function ServiceHero({ name, categoryName, title, subtitle, aiOverview, i
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Main Info */}
           <div className="lg:col-span-7 flex flex-col gap-5 items-start">
-            <span className="bg-[#E8972F] text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full">
-              {categoryName}
-            </span>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="bg-[#E8972F] text-slate-950 text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full animate-pulse shadow-md">
+                🔥 Flat 20% OFF
+              </span>
+              <span className="bg-white/15 backdrop-blur-md border border-white/25 text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full">
+                10 Years Warranty
+              </span>
+              <span className="bg-[#0D5C5C] text-amber-200 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-teal-500/30">
+                {categoryName}
+              </span>
+            </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight font-sans tracking-tight">
               {title}
             </h1>
@@ -66,21 +74,21 @@ export function ServiceHero({ name, categoryName, title, subtitle, aiOverview, i
             {/* Primary Action Buttons */}
             <div className="flex flex-wrap gap-4 mt-4 w-full sm:w-auto">
               <a
-                href="tel:+91 95503 18183"
-                className="w-full sm:w-auto flex items-center justify-center gap-2.5 bg-[#E8972F] text-white font-bold px-6 py-4 rounded-full hover:bg-accent-hover transition-colors shadow-lg hover:shadow-xl text-sm"
+                href="tel:+919550318183"
+                className="w-full sm:w-auto flex items-center justify-center gap-2.5 bg-[#E8972F] text-slate-950 font-black px-6 py-4 rounded-full hover:bg-amber-400 transition-colors shadow-lg hover:shadow-xl text-sm"
               >
                 <Phone className="w-4 h-4" />
-                <span>Call +91 95503 18183</span>
+                <span>Call +91 95503 18183 (Save 20%)</span>
               </a>
 
               <a
-                href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
+                href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20claim%20the%20Flat%2020%25%20Discount%20and%2010%20Years%20Warranty%20for%20safety%20nets%2Finvisible%20grills."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto flex items-center justify-center gap-2.5 bg-emerald-600 text-white font-bold px-6 py-4 rounded-full hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl text-sm"
               >
                 <MessageSquare className="w-4 h-4 fill-white/10" />
-                <span>WhatsApp Chat</span>
+                <span>WhatsApp 20% Quote</span>
               </a>
 
               <Link
@@ -126,21 +134,29 @@ export function ServiceStickyBar({ name }: { name: string }) {
           className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-2xl border-t border-slate-200 py-3 block"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
-            <span className="hidden md:inline text-sm font-bold text-slate-800 tracking-tight">
-              Protect your Balcony with {name}
-            </span>
+            <div className="hidden md:flex items-center gap-2">
+              <span className="text-sm font-bold text-slate-800 tracking-tight">
+                {name} Installation
+              </span>
+              <span className="bg-[#E8972F] text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded-full">
+                Flat 20% OFF
+              </span>
+              <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                10 Years Warranty
+              </span>
+            </div>
 
             <div className="flex items-center gap-3 w-full md:w-auto">
               <a
-                href="tel:+91 95503 18183"
-                className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-[#E8972F] text-white font-bold px-5 py-3 rounded-full hover:bg-accent-hover text-xs sm:text-sm shadow-xs transition-colors"
+                href="tel:+919550318183"
+                className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-[#E8972F] text-slate-950 font-black px-5 py-3 rounded-full hover:bg-amber-400 text-xs sm:text-sm shadow-xs transition-colors"
               >
                 <Phone className="w-3.5 h-3.5" />
-                <span>Call Now</span>
+                <span>Call Now (20% OFF)</span>
               </a>
 
               <a
-                href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
+                href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20claim%20the%20Flat%2020%25%20Discount%20and%2010%20Years%20Warranty%20for%20safety%20nets%2Finvisible%20grills."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-emerald-600 text-white font-bold px-5 py-3 rounded-full hover:bg-emerald-700 text-xs sm:text-sm shadow-xs transition-colors"
@@ -165,12 +181,12 @@ export function ServiceStickyBar({ name }: { name: string }) {
 
 export function ServiceTrustBar() {
   const trustBadges = [
+    { label: "Flat 20% OFF Deal", icon: <Award className="w-4 h-4 text-[#E8972F]" /> },
+    { label: "10-Year Warranty Card", icon: <ShieldCheck className="w-4 h-4 text-[#E8972F]" /> },
     { label: "Professional Installation", icon: <Wrench className="w-4 h-4 text-[#E8972F]" /> },
-    { label: "Premium Materials", icon: <ShieldCheck className="w-4 h-4 text-[#E8972F]" /> },
-    { label: "Fast Response", icon: <Clock className="w-4 h-4 text-[#E8972F]" /> },
-    { label: "Affordable Pricing", icon: <Award className="w-4 h-4 text-[#E8972F]" /> },
-    { label: "Bangalore, Karnataka Coverage", icon: <Globe className="w-4 h-4 text-[#E8972F]" /> },
-    { label: "Customer Satisfaction", icon: <CheckCircle2 className="w-4 h-4 text-[#E8972F]" /> },
+    { label: "Fast Same-Day Service", icon: <Clock className="w-4 h-4 text-[#E8972F]" /> },
+    { label: "Bangalore-Wide Coverage", icon: <Globe className="w-4 h-4 text-[#E8972F]" /> },
+    { label: "4.96/5 Star Reviews", icon: <CheckCircle2 className="w-4 h-4 text-[#E8972F]" /> },
   ];
 
   return (

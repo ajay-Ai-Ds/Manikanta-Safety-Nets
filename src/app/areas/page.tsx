@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { areasList, AreaDetail } from "@/utils/areasData";
 import MapFrame from "@/components/ui/map-frame";
+import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 
 const zoneFilters = [
   { id: "all", name: "All 110+ Areas" },
@@ -189,16 +190,21 @@ export default function AreasPage() {
         </nav>
 
         {/* Hero Header */}
-        <div className="bg-gradient-to-r from-[#063333] via-[#0D5C5C] to-[#1B6868] text-white rounded-3xl p-8 sm:p-12 mb-10 shadow-xl border border-white/10 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-[#063333] via-[#0D5C5C] to-[#1B6868] text-white rounded-3xl p-8 sm:p-12 mb-8 shadow-xl border border-white/10 relative overflow-hidden">
           <div className="max-w-3xl relative z-10">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-amber-300 text-xs font-bold uppercase tracking-wider mb-4 border border-amber-300/30 backdrop-blur-md">
-              <Sparkles className="w-3.5 h-3.5" /> Complete Bangalore Coverage • 110+ Locations
-            </span>
+            <div className="flex flex-wrap items-center gap-2 mb-4">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-amber-300 text-xs font-bold uppercase tracking-wider border border-amber-300/30 backdrop-blur-md">
+                <Sparkles className="w-3.5 h-3.5" /> Complete Bangalore Coverage • 110+ Locations
+              </span>
+              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-400 text-slate-950 text-xs font-black uppercase tracking-wider animate-pulse shadow-md">
+                🔥 Flat 20% OFF Deal
+              </span>
+            </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight text-white mb-4">
               Doorstep Safety Net &amp; Invisible Grill Services Across All Bangalore Localities
             </h1>
             <p className="text-slate-200 text-sm sm:text-base leading-relaxed mb-6">
-              Manikanta Safety Solutions operates mobile rigger squads across 110+ Bangalore neighborhoods. Enjoy 100% free doorstep laser measurements, genuine SS316 marine-grade cables, virgin UV-treated HDPE polymer nets, and official 5-year replacement warranty.
+              Manikanta Safety Solutions operates mobile rigger squads across 110+ Bangalore neighborhoods. Enjoy 100% free doorstep laser measurements, genuine SS316 marine-grade cables, virgin UV-treated HDPE polymer nets, <strong className="text-white">official 10-year replacement warranty</strong>, and <strong className="text-amber-300">Flat 20% Discount</strong>.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm font-semibold text-slate-200">
@@ -207,8 +213,12 @@ export default function AreasPage() {
                 <span>Zero-Cost Inspection</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#E8972F]" />
-                <span>5-Year Written Warranty</span>
+                <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                <span>10-Year Written Warranty</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-amber-300" />
+                <span>Flat 20% Discount Applied</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#E8972F]" />
@@ -216,6 +226,11 @@ export default function AreasPage() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* High-Converting 20% Discount & 10 Years Warranty Scrolling Ticker */}
+        <div className="mb-10">
+          <ServicePromoTicker />
         </div>
 
         {/* Search & Filter Controls */}

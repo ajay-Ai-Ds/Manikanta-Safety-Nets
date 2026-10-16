@@ -28,6 +28,7 @@ import {
   generateFAQPageSchema,
 } from "@/utils/schema";
 import QuickLeadForm from "@/components/forms/QuickLeadForm";
+import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 
 interface PageProps {
   params: Promise<{ service: string; area: string }>;
@@ -44,8 +45,8 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const title = `${serviceDetail.name} in ${areaDetail.name} | Free Inspection & Same-Day Service - Manikanta Safety Solutions`;
-  const description = `Get expert ${serviceDetail.name} installation in ${areaDetail.name}, Bangalore, Karnataka. UV-treated virgin HDPE mesh, SS316 marine-grade invisible grills, 5-year warranty, and free doorstep measurement across ${areaDetail.localities.slice(0, 5).join(", ")}. Call +91 95503 18183.`;
+  const title = `${serviceDetail.name} in ${areaDetail.name} | Flat 20% OFF & 10-Yr Warranty - Manikanta Safety Solutions`;
+  const description = `Get expert ${serviceDetail.name} installation in ${areaDetail.name}, Bangalore, Karnataka. UV-treated virgin HDPE mesh, SS316 marine invisible grills, 10-year warranty, Flat 20% discount, and free doorstep measurement across ${areaDetail.localities.slice(0, 5).join(", ")}. Call +91 95503 18183.`;
 
   return {
     title,
@@ -126,7 +127,7 @@ export default async function ServiceLocationPage({ params }: PageProps) {
     },
     {
       question: `Do you provide a warranty on ${serviceDetail.name} in ${areaDetail.name}?`,
-      answer: `Yes, every ${serviceDetail.name} installation by Manikanta Safety Solutions in ${areaDetail.name} includes an official 3 to 5 Year Manufacturer & Workmanship Warranty Card.`,
+      answer: `Yes, every ${serviceDetail.name} installation by Manikanta Safety Solutions in ${areaDetail.name} includes an official 10 Years Replacement Warranty Card and Flat 20% Discount auto-applied.`,
     },
     {
       question: `Is your bird netting and spike installation 100% humane and safe?`,
@@ -149,7 +150,7 @@ export default async function ServiceLocationPage({ params }: PageProps) {
     .filter(Boolean);
 
   const whatsappMessage = encodeURIComponent(
-    `Hello Manikanta Safety Solutions! I am interested in ${serviceDetail.name} installation in ${areaDetail.name}. Please share a free quote.`
+    `Hello Manikanta Safety Solutions! I would like to claim the Flat 20% Discount and 10 Years Warranty for ${serviceDetail.name} in ${areaDetail.name}. Please confirm my free site visit.`
   );
 
   return (
@@ -211,14 +212,19 @@ export default async function ServiceLocationPage({ params }: PageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             {/* Left Column: Conversion Copy & Triggers */}
             <div className="lg:col-span-7 space-y-6">
-              {/* Trust Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-semibold text-amber-200">
-                <div className="flex text-amber-400">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                  ))}
+              {/* Top Badges: Flat 20% OFF + Reviews */}
+              <div className="flex flex-wrap items-center gap-2.5">
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-400 text-slate-950 text-xs font-black uppercase tracking-wider shadow-md animate-pulse">
+                  🔥 Flat 20% OFF Today
+                </span>
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-semibold text-amber-200">
+                  <div className="flex text-amber-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                    ))}
+                  </div>
+                  <span>4.9/5 Rated in {areaDetail.name} (1,200+ Homes)</span>
                 </div>
-                <span>4.9/5 Rated across {areaDetail.name} (1,200+ Homes)</span>
               </div>
 
               {/* Dynamic H1 */}
@@ -229,22 +235,22 @@ export default async function ServiceLocationPage({ params }: PageProps) {
               {/* Localized Subheading */}
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
                 Protect your home and loved ones with certified, heavy-duty {serviceDetail.name.toLowerCase()} in{" "}
-                <strong>{areaDetail.name}</strong>. Virgin UV-stabilized materials, rustproof SS316 marine-grade hardware, 5-Year Warranty card, and 100% free doorstep inspection across {areaDetail.localities.slice(0, 4).join(", ")}.
+                <strong>{areaDetail.name}</strong>. Virgin UV-stabilized materials, rustproof SS316 marine-grade hardware, 10-Year Replacement Warranty card, Flat 20% Discount, and 100% free doorstep inspection across {areaDetail.localities.slice(0, 4).join(", ")}.
               </p>
 
               {/* Key Selling Points Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 pt-2">
                 <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-white/5 border border-white/10">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
-                  <span className="text-xs sm:text-sm font-semibold text-slate-200">Free On-Site Laser Measurement</span>
+                  <span className="text-xs sm:text-sm font-semibold text-slate-200">Free Laser Measurement</span>
                 </div>
                 <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-white/5 border border-white/10">
                   <Award className="w-5 h-5 text-[#E8972F] shrink-0" />
-                  <span className="text-xs sm:text-sm font-semibold text-slate-200">3-5 Year Warranty Certificate</span>
+                  <span className="text-xs sm:text-sm font-semibold text-slate-200">10-Year Replacement Warranty</span>
                 </div>
                 <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-white/5 border border-white/10">
-                  <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0" />
-                  <span className="text-xs sm:text-sm font-semibold text-slate-200">100% Humane &amp; Bird-Safe</span>
+                  <Sparkles className="w-5 h-5 text-amber-300 shrink-0" />
+                  <span className="text-xs sm:text-sm font-semibold text-amber-200">Flat 20% Discount Included</span>
                 </div>
                 <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-white/5 border border-white/10">
                   <Clock className="w-5 h-5 text-[#E8972F] shrink-0" />
@@ -259,7 +265,7 @@ export default async function ServiceLocationPage({ params }: PageProps) {
                   className="flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-[#E8972F] to-[#01579B] hover:from-[#039BE5] hover:to-[#E8972F] text-white font-extrabold text-sm rounded-2xl shadow-xl shadow-sky-950/40 hover:scale-[1.02] transition-transform"
                 >
                   <Phone className="w-4 h-4 animate-bounce" />
-                  <span>Call Now: +91 95503 18183</span>
+                  <span>Call Now: +91 95503 18183 (Save 20%)</span>
                 </a>
                 <a
                   href={`https://wa.me/919550318183?text=${whatsappMessage}`}
@@ -268,7 +274,7 @@ export default async function ServiceLocationPage({ params }: PageProps) {
                   className="flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-extrabold text-sm rounded-2xl shadow-xl shadow-emerald-950/30 hover:scale-[1.02] transition-transform"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  <span>Chat on WhatsApp</span>
+                  <span>WhatsApp 20% Quote</span>
                 </a>
               </div>
             </div>
@@ -285,6 +291,9 @@ export default async function ServiceLocationPage({ params }: PageProps) {
           </div>
         </div>
       </div>
+
+      {/* High-Converting 20% Discount & 10 Years Warranty Scrolling Ticker */}
+      <ServicePromoTicker />
 
       {/* Localities & Neighborhoods We Serve in This City */}
       <section className="py-12 bg-white border-b border-slate-200/80">
@@ -367,7 +376,11 @@ export default async function ServiceLocationPage({ params }: PageProps) {
                 </div>
                 <div className="py-2.5 flex justify-between items-center gap-4">
                   <span className="text-slate-500 font-semibold">Warranty Provided</span>
-                  <span className="text-emerald-600 font-bold text-right">3 to 5 Years Written Card</span>
+                  <span className="text-emerald-600 font-bold text-right">10 Years Replacement Card</span>
+                </div>
+                <div className="py-2.5 flex justify-between items-center gap-4">
+                  <span className="text-slate-500 font-semibold">Special Promotion</span>
+                  <span className="text-amber-600 font-bold text-right">Flat 20% OFF Auto-Applied</span>
                 </div>
               </div>
             </div>
@@ -423,7 +436,7 @@ export default async function ServiceLocationPage({ params }: PageProps) {
                 3. Expert Clean Installation
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Our trained height-safety technicians complete the anchoring in 2 to 4 hours, vacuum-clean the drill area, test the tension, and hand over your signed 5-Year Warranty Certificate.
+                Our trained height-safety technicians complete the anchoring in 2 to 4 hours, vacuum-clean the drill area, test the tension, and hand over your signed 10-Year Replacement Warranty Certificate.
               </p>
             </div>
           </div>

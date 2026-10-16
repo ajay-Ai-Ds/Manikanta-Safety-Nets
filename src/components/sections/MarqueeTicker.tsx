@@ -1,15 +1,17 @@
 "use client";
 
-import { Shield, PhoneCall, Award, Clock, Wrench, CheckCircle } from "lucide-react";
+import { Shield, PhoneCall, Award, Clock, Wrench, CheckCircle, Sparkles, Percent } from "lucide-react";
 
 export default function MarqueeTicker() {
   const items = [
-    { icon: Shield, text: "Certified High-Rise Safety Netting", highlight: "140kg+ Load Tested" },
-    { icon: Award, text: "Marine-Grade SS316 Invisible Grills", highlight: "100% Rust-Proof" },
+    { icon: Percent, text: "Limited Period Promotion", highlight: "Flat 20% OFF Everything" },
+    { icon: Shield, text: "Official Warranty Assurance", highlight: "10 Years Replacement Card" },
+    { icon: Award, text: "Marine-Grade SS316 Invisible Grills", highlight: "100% Rust-Proof Guarantee" },
     { icon: Clock, text: "Doorstep Laser Measurements", highlight: "100% Free Consultation" },
-    { icon: Wrench, text: "Rapid Turnaround in Bangalore", highlight: "Same-Day Service" },
-    { icon: PhoneCall, text: "Direct Helpline & WhatsApp", highlight: "+91 95503 18183" },
-    { icon: CheckCircle, text: "Official Warranty Assurance", highlight: "5-Year Replacement Card" },
+    { icon: Sparkles, text: "Special Bangalore Deal", highlight: "Flat 20% Discount Auto-Applied" },
+    { icon: Wrench, text: "Rapid Turnaround in Bangalore", highlight: "Same-Day Installation" },
+    { icon: PhoneCall, text: "Call for 20% Discount Code", highlight: "+91 95503 18183" },
+    { icon: CheckCircle, text: "High-Tensile Load Rating", highlight: "140kg+ Point Load Certified" },
   ];
 
   return (
@@ -21,7 +23,7 @@ export default function MarqueeTicker() {
             <div key={idx} className="flex items-center gap-2 mx-6 text-xs sm:text-sm font-semibold">
               <Icon className="w-4 h-4 text-[#E8972F] shrink-0" />
               <span className="text-slate-200">{item.text}:</span>
-              <span className="text-[#E8972F] font-bold bg-black/20 px-2 py-0.5 rounded border border-[#E8972F]/30">
+              <span className="text-[#E8972F] font-black bg-black/30 px-2.5 py-0.5 rounded border border-[#E8972F]/40 shadow-xs">
                 {item.highlight}
               </span>
             </div>

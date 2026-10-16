@@ -19,9 +19,9 @@ export default function Stats() {
     },
     {
       icon: Award,
-      value: "5 Years",
-      label: "Direct Warranty",
-      desc: "Official replacement guarantee on materials and tensile hardware",
+      value: "10 Years",
+      label: "Replacement Warranty",
+      desc: "Official 10-year replacement guarantee on materials and SS304/SS316 tensile hardware",
     },
     {
       icon: MapPin,

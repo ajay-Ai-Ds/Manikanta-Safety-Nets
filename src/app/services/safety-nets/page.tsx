@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ShieldCheck, Home } from "lucide-react";
+import { ArrowRight, ShieldCheck, Home, Shield, Percent } from "lucide-react";
 import { servicesData } from "@/utils/servicesData";
+import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 
 import type { Metadata } from "next";
 
@@ -87,17 +88,20 @@ export default function SafetyNetsCategoryPage() {
         </nav>
 
         {/* Title Header */}
-        <div className="text-left max-w-3xl mb-16 flex flex-col gap-3">
+        <div className="text-left max-w-3xl mb-8 flex flex-col gap-3">
           <span className="text-xs font-bold uppercase tracking-widest text-[#E8972F] bg-[#F0F7F7] px-3.5 py-1.5 rounded-full inline-block self-start">
             Primary Division
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 tracking-tight leading-tight">
-            Safety Nets (9 Services)
+            Safety Nets ({categoryServices.length} Services)
           </h1>
           <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
-            Protect your family, pets, and structures with high-density copolymer netting. Designed for Bangalore, Karnataka&apos;s weather and custom anchored to meet absolute safety benchmarks.
+            Protect your family, pets, and structures with high-density copolymer netting. Designed for Bangalore weather, custom anchored, and backed by a 10 Years Warranty and Flat 20% Instant Discount!
           </p>
         </div>
+
+        {/* High-Converting 20% Discount & 10 Years Warranty Scrolling Ticker */}
+        <ServicePromoTicker />
 
         {/* Services List Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -114,6 +118,14 @@ export default function SafetyNetsCategoryPage() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute top-3 right-3 bg-[#E8972F] text-slate-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow-md animate-pulse flex items-center gap-1">
+                  <Percent className="w-3 h-3" />
+                  <span>Flat 20% OFF</span>
+                </div>
+                <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-xs text-[#0D5C5C] text-[10px] font-extrabold px-2.5 py-1 rounded-md shadow-xs flex items-center gap-1">
+                  <Shield className="w-3 h-3 text-[#E8972F]" />
+                  <span>10 Years Warranty</span>
+                </div>
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-[#E8972F] transition-colors">
@@ -126,7 +138,7 @@ export default function SafetyNetsCategoryPage() {
                   href={`/services/${service.slug}`}
                   className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[#0D5C5C] hover:text-[#E8972F] transition-colors group/btn pt-4 border-t border-slate-50 mt-auto"
                 >
-                  <span>View Installation Details</span>
+                  <span>Claim 20% OFF &amp; View Details</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </Link>
               </div>

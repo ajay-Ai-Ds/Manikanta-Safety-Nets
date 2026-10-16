@@ -45,7 +45,7 @@ export const projectsData: Record<string, ProjectDetail> = {
       "Drilled precision anchor sockets using low-vibration diamond core bits.",
       "Interlaced heavy perimeter boundary cord through the HDPE safety mesh.",
       "Tensioned all anchor points to verify a minimum 120kg point-load capacity.",
-      "Cleaned drilling residue with HEPA vacuum and delivered official 5-year warranty card.",
+      "Cleaned drilling residue with HEPA vacuum and delivered official 10-year warranty card.",
     ],
     image: "/images/materials/Balconynetwork.jpeg",
     gallery: [
@@ -59,7 +59,7 @@ export const projectsData: Record<string, ProjectDetail> = {
       { label: "Mesh Specification", value: "30mm x 30mm Copolymer HDPE" },
       { label: "Anchor Pitch", value: "15cm interval precision spacing" },
       { label: "Static Load Resistance", value: "Over 140 kg per knot point" },
-      { label: "Warranty Issued", value: "5 Years Direct Replacement Guarantee" },
+      { label: "Warranty Issued", value: "10 Years Direct Replacement Guarantee" },
     ],
   },
 

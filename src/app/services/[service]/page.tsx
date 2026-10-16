@@ -8,6 +8,7 @@ import { ServiceTimeline, ServiceWhyChoose, ServiceRelated, ServiceFAQs } from "
 import BeforeAfterSlider from "@/components/ui/before-after-slider";
 import LightboxGallery from "@/components/ui/lightbox-gallery";
 import ContactForm from "@/components/sections/ContactForm";
+import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 
 import { generateBreadcrumbSchema, generateServiceSchema } from "@/utils/schema";
 
@@ -119,7 +120,10 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       {/* Trust Badges Bar */}
       <ServiceTrustBar />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        {/* High-Converting 20% Discount & 10 Years Warranty Scrolling Ticker */}
+        <ServicePromoTicker serviceName={serviceDetail.name} />
+
         {/* Localized Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-6" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#E8972F] flex items-center gap-1">

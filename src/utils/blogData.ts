@@ -88,13 +88,13 @@ export const blogData: Record<string, BlogArticle> = {
       },
       {
         heading: "Free Doorstep Inspection Across Bangalore",
-        text: "We calculate pricing transparently based on measured perimeter area, twine gauge, and mounting complexity. Schedule a free home measurement with Manikanta Safety Solutions to receive an honest written estimate with a 5-year replacement guarantee.",
+        text: "We calculate pricing transparently based on measured perimeter area, twine gauge, and mounting complexity. Schedule a free home measurement with Manikanta Safety Solutions to receive an honest written estimate with a 10-year replacement guarantee and Flat 20% Discount.",
       },
     ],
     faqs: [
       {
         question: "What is the expected lifespan of a UV-treated safety net?",
-        answer: "Our high-grade virgin copolymer nets typically endure 7 to 10 years under outdoor sun and rain. Every installation includes a 5-Year Stamped Warranty.",
+        answer: "Our high-grade virgin copolymer nets typically endure 10 to 15 years under outdoor sun and rain. Every installation includes a 10-Year Stamped Warranty.",
       },
       {
         question: "Will safety netting restrict natural ventilation or darken our rooms?",

@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="flex flex-col gap-5">
             <Logo light={true} />
             <p className="text-[#D1D5DB] text-sm leading-relaxed mt-2">
-              Manikanta Safety Solutions delivers certified high-tensile balcony safety nets, marine-grade SS316 invisible wire grills, and stainless cloth drying systems across Bangalore. Engineered for extreme coastal durability with 5-year replacement guarantees.
+              Manikanta Safety Solutions delivers certified high-tensile balcony safety nets, marine-grade SS316 invisible wire grills, and stainless cloth drying systems across Bangalore. Engineered with official 10-year replacement warranty and Flat 20% Discount on all installations.
             </p>
             <div className="flex flex-col gap-3 mt-1 text-sm text-[#D1D5DB]">
               <div className="flex items-center gap-3">
@@ -66,6 +66,7 @@ export default function Footer() {
                 { label: "Children Safety Nets", href: "/services/children-safety-nets" },
                 { label: "Pet Safety Nets", href: "/services/pet-safety-nets" },
                 { label: "Pigeon Safety Nets", href: "/services/pigeon-safety-nets" },
+                { label: "Mosquito Nets for Windows", href: "/services/mosquito-nets" },
                 { label: "Balcony Invisible Grills", href: "/services/balcony-invisible-grills" },
                 { label: "Window Invisible Grills", href: "/services/window-invisible-grills" },
                 { label: "Staircase Invisible Grills", href: "/services/staircase-invisible-grills" },

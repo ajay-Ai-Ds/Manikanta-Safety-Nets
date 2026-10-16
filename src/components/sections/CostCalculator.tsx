@@ -22,24 +22,32 @@ interface ServiceOption {
 }
 
 const serviceOptions: ServiceOption[] = [
-  { id: "balcony-net", name: "Balcony Safety Nets (HDPE)", pricePerSqFt: 18, unit: "sq. ft.", warranty: "5 Years" },
-  { id: "pigeon-net", name: "Pigeon & Anti-Bird Nets", pricePerSqFt: 16, unit: "sq. ft.", warranty: "5 Years" },
+  { id: "balcony-net", name: "Balcony Safety Nets (HDPE)", pricePerSqFt: 18, unit: "sq. ft.", warranty: "10 Years" },
+  { id: "pigeon-net", name: "Pigeon & Anti-Bird Nets", pricePerSqFt: 16, unit: "sq. ft.", warranty: "10 Years" },
   { id: "invisible-grill", name: "SS316 Marine Invisible Grills", pricePerSqFt: 140, unit: "sq. ft.", warranty: "10 Years" },
-  { id: "pet-net", name: "Claw-Proof Pet Safety Nets", pricePerSqFt: 22, unit: "sq. ft.", warranty: "5 Years" },
-  { id: "children-net", name: "High-Rise Child Safety Nets", pricePerSqFt: 20, unit: "sq. ft.", warranty: "5 Years" },
-  { id: "sports-net", name: "Heavy Sports & Cricket Nets", pricePerSqFt: 25, unit: "sq. ft.", warranty: "5 Years" },
+  { id: "pet-net", name: "Claw-Proof Pet Safety Nets", pricePerSqFt: 22, unit: "sq. ft.", warranty: "10 Years" },
+  { id: "children-net", name: "High-Rise Child Safety Nets", pricePerSqFt: 20, unit: "sq. ft.", warranty: "10 Years" },
+  { id: "sports-net", name: "Heavy Sports & Cricket Nets", pricePerSqFt: 25, unit: "sq. ft.", warranty: "10 Years" },
+  { id: "mosquito-net", name: "Mosquito Nets for Windows & Balconies", pricePerSqFt: 35, unit: "sq. ft.", warranty: "10 Years" },
 ];
 
 export default function CostCalculator() {
   const [selectedService, setSelectedService] = useState<ServiceOption>(serviceOptions[0]);
   const [areaSqFt, setAreaSqFt] = useState<number>(120);
 
-  const estimatedCost = Math.round(selectedService.pricePerSqFt * areaSqFt);
-  const minCost = Math.round(estimatedCost * 0.95);
-  const maxCost = Math.round(estimatedCost * 1.05);
+  // Original standard price calculation
+  const rawOriginalCost = Math.round(selectedService.pricePerSqFt * areaSqFt);
+  const minOriginal = Math.round(rawOriginalCost * 0.95);
+  const maxOriginal = Math.round(rawOriginalCost * 1.05);
+
+  // Flat 20% Discount applied automatically
+  const discountedCost = Math.round(rawOriginalCost * 0.80);
+  const minCost = Math.round(discountedCost * 0.95);
+  const maxCost = Math.round(discountedCost * 1.05);
+  const savings = maxOriginal - maxCost;
 
   const whatsappMessage = encodeURIComponent(
-    `Hi Manikanta Safety Solutions, I calculated an estimate for ${selectedService.name} (~${areaSqFt} ${selectedService.unit}) around ₹${minCost} - ₹${maxCost}. Please confirm my free site inspection time in Bangalore.`
+    `Hi Manikanta Safety Solutions, I calculated an estimate with Flat 20% Discount for ${selectedService.name} (~${areaSqFt} ${selectedService.unit}) around ₹${minCost} - ₹${maxCost} with 10 Years Warranty. Please confirm my free doorstep measurement in Bangalore.`
   );
 
   return (
@@ -49,13 +57,13 @@ export default function CostCalculator() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F0F7F7] text-[#0D5C5C] border border-[#B2DCDC] text-xs font-extrabold uppercase tracking-widest mb-4 shadow-xs">
-            <Calculator className="w-4 h-4 text-[#0D5C5C]" /> Instant Budget Estimator
+            <Calculator className="w-4 h-4 text-[#0D5C5C]" /> Instant Budget Estimator • Flat 20% OFF
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0D5C5C] tracking-tight leading-tight mb-4">
             Estimate Your Custom Installation Cost
           </h2>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Quickly estimate your investment for balcony safety nets, invisible grills, or cloth drying systems in Bangalore. <span className="font-bold text-[#0D5C5C]">Transparent rates + Free on-site laser measurement.</span>
+            Quickly estimate your investment for balcony safety nets, invisible grills, or cloth drying systems in Bangalore. <span className="font-bold text-[#0D5C5C]">Flat 20% Discount Auto-Applied + 10 Years Warranty + Free Laser Measurement.</span>
           </p>
         </div>
 
@@ -123,18 +131,22 @@ export default function CostCalculator() {
             </div>
 
             {/* Included Guarantees */}
-            <div className="pt-4 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs text-slate-600">
+            <div className="pt-4 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-slate-600">
               <div className="flex items-center gap-1.5 font-medium">
-                <ShieldCheck className="w-4 h-4 text-[#E8972F] shrink-0" />
-                <span>{selectedService.warranty} Warranty</span>
+                <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span className="font-semibold text-emerald-800">10 Years Warranty</span>
               </div>
               <div className="flex items-center gap-1.5 font-medium">
-                <Zap className="w-4 h-4 text-[#E8972F] shrink-0" />
+                <Sparkles className="w-4 h-4 text-[#E8972F] shrink-0" />
+                <span className="font-semibold text-amber-700">Flat 20% OFF</span>
+              </div>
+              <div className="flex items-center gap-1.5 font-medium">
+                <Zap className="w-4 h-4 text-[#0D5C5C] shrink-0" />
                 <span>Free Doorstep Visit</span>
               </div>
               <div className="flex items-center gap-1.5 font-medium">
-                <Award className="w-4 h-4 text-[#E8972F] shrink-0" />
-                <span>Certified Hardware</span>
+                <Award className="w-4 h-4 text-[#0D5C5C] shrink-0" />
+                <span>SS304/SS316 Hardware</span>
               </div>
             </div>
           </motion.div>
@@ -148,21 +160,40 @@ export default function CostCalculator() {
             className="lg:col-span-5 bg-[#0D5C5C] text-white rounded-[20px] p-6 sm:p-8 border border-[#1B6868] shadow-xl flex flex-col justify-between"
           >
             <div>
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-[#E8972F] bg-white/10 px-3 py-1 rounded-full border border-white/15 mb-4">
-                <Sparkles className="w-3.5 h-3.5" /> Estimated Range
-              </span>
+              <div className="flex items-center justify-between gap-2 mb-4">
+                <span className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-[#E8972F] bg-white/10 px-3 py-1 rounded-full border border-white/15">
+                  <Sparkles className="w-3.5 h-3.5" /> Estimated Range
+                </span>
+                <span className="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wider text-amber-200 bg-amber-400/20 px-2.5 py-1 rounded-full border border-amber-300/30 animate-pulse">
+                  🔥 20% DISCOUNT APPLIED
+                </span>
+              </div>
               <h3 className="text-lg font-bold text-white mb-1">{selectedService.name}</h3>
-              <p className="text-xs text-slate-300 mb-6">
+              <p className="text-xs text-slate-300 mb-4">
                 Calculated for ~{areaSqFt} {selectedService.unit} across Bangalore.
               </p>
 
-              <div className="bg-[#063333] rounded-2xl p-6 border border-[#1B6868] mb-6 text-center">
-                <span className="text-xs text-slate-400 block mb-1">Estimated Cost Range</span>
+              <div className="bg-[#063333] rounded-2xl p-5 border border-[#1B6868] mb-6 text-center">
+                {/* Original price strikethrough */}
+                <div className="text-xs text-slate-400 mb-1 flex items-center justify-center gap-2">
+                  <span>Regular Price:</span>
+                  <span className="line-through decoration-rose-400 text-slate-400 font-semibold">
+                    ₹{minOriginal.toLocaleString("en-IN")} - ₹{maxOriginal.toLocaleString("en-IN")}
+                  </span>
+                </div>
+
+                {/* 20% Discounted Final Price */}
+                <span className="text-xs text-emerald-400 font-bold uppercase tracking-wider block mb-1">
+                  Special Offer Price (Flat 20% OFF)
+                </span>
                 <div className="text-3xl sm:text-4xl font-black text-[#E8972F] tracking-tight">
                   ₹{minCost.toLocaleString("en-IN")} - ₹{maxCost.toLocaleString("en-IN")}*
                 </div>
+                <div className="mt-2 inline-block px-3 py-1 bg-emerald-950/80 text-emerald-300 text-xs font-bold rounded-lg border border-emerald-500/30">
+                  🎉 You Save approx. ₹{savings.toLocaleString("en-IN")} Today!
+                </div>
                 <span className="text-[10px] text-slate-400 block mt-2">
-                  *Exact price confirmed on-site after free laser measurement. Includes all stainless hardware &amp; installation labor.
+                  *Exact price confirmed on-site after free laser measurement. Includes SS304/SS316 hardware, 10 Years Warranty &amp; installation labor.
                 </span>
               </div>
             </div>
@@ -175,7 +206,7 @@ export default function CostCalculator() {
                 className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition-all text-xs sm:text-sm cursor-pointer"
               >
                 <MessageSquare className="w-4 h-4" />
-                <span>Book Free Measurement on WhatsApp</span>
+                <span>Claim 20% OFF &amp; Book Free Measurement</span>
               </a>
 
               <a
@@ -183,7 +214,7 @@ export default function CostCalculator() {
                 className="w-full flex items-center justify-center gap-2 bg-[#E8972F] hover:bg-[#F5B054] text-slate-900 font-black py-3.5 px-4 rounded-xl shadow-md transition-all text-xs sm:text-sm cursor-pointer"
               >
                 <PhoneCall className="w-4 h-4 text-slate-900" />
-                <span>Call +91 95503 18183 Directly</span>
+                <span>Call +91 95503 18183 (Save 20%)</span>
               </a>
             </div>
           </motion.div>

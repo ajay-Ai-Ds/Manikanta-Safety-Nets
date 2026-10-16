@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { generateBreadcrumbSchema } from "@/utils/schema";
 import ContactForm from "@/components/forms/ContactForm";
+import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 
 export const metadata: Metadata = {
   title: "Pricing Guide & Estimation | Manikanta Safety Solutions Bangalore, Karnataka",
@@ -110,10 +111,11 @@ export default function PricingPage() {
       category: "HDPE Virgin Copolymer",
       priceRange: "Starting from ₹15 - ₹28 / sq.ft",
       features: [
+        "Flat 20% Discount Auto-Applied",
         "100% Virgin UV-Stabilized Polymer Mesh",
         "SS304 Rustproof Concrete Expansion Eyebolts",
         "Tested 140kg+ Knot Breaking Strength",
-        "5-Year Stamped Replacement Warranty",
+        "10-Year Stamped Replacement Warranty",
         "Free Doorstep Laser Measurement",
       ],
       popular: true,
@@ -123,6 +125,7 @@ export default function PricingPage() {
       category: "Architectural Stainless Wire",
       priceRange: "Starting from ₹120 - ₹180 / sq.ft",
       features: [
+        "Flat 20% Discount Auto-Applied",
         "Aerospace SS316 Marine-Grade Multi-Strand Wire",
         "Clear DuPont Anti-UV Nylon Sheathing",
         "T6 Structural Powder-Coated Aluminium Tracks",
@@ -136,10 +139,11 @@ export default function PricingPage() {
       category: "Dual-Pulley Hoist System",
       priceRange: "₹1,800 - ₹3,500 / complete set",
       features: [
+        "Flat 20% Discount Auto-Applied",
         "6 Independent Seamless SS304 Stainless Tubes",
         "Smooth Dual-Pulley Nylon Bearing Hardware",
         "Reclaims 100% Balcony Walkway Floor Space",
-        "3-Year Complete Mechanical Warranty",
+        "10-Year Mechanical & Material Warranty",
         "Prompt Turnkey Installation Included",
       ],
       popular: false,
@@ -171,16 +175,26 @@ export default function PricingPage() {
         </nav>
 
         {/* Page Header */}
-        <div className="text-left max-w-3xl mb-16 flex flex-col gap-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#0D5C5C] bg-[#F0F7F7] px-3.5 py-1.5 rounded-full inline-block self-start border border-[#B2DCDC]">
-            Transparent Estimations
-          </span>
+        <div className="text-left max-w-3xl mb-12 flex flex-col gap-3">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#0D5C5C] bg-[#F0F7F7] px-3.5 py-1.5 rounded-full inline-block border border-[#B2DCDC]">
+              Transparent Estimations
+            </span>
+            <span className="text-xs font-black uppercase tracking-wider text-amber-900 bg-amber-400 px-3 py-1 rounded-full animate-pulse shadow-sm">
+              🔥 Flat 20% OFF Limited Offer
+            </span>
+          </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             Clear, Transparent Safety Solutions Pricing
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            At Manikanta Safety Solutions, we maintain an honest, upfront pricing philosophy with zero hidden charges, transparent per-square-foot calculations, and complimentary doorstep laser measurements across all Bangalore neighborhoods.
+            At Manikanta Safety Solutions, we maintain an honest, upfront pricing philosophy with zero hidden charges, transparent per-square-foot calculations, official <strong className="text-[#0D5C5C]">10-Year Replacement Warranty</strong>, <strong className="text-amber-600">Flat 20% Discount</strong>, and complimentary doorstep laser measurements across all Bangalore neighborhoods.
           </p>
+        </div>
+
+        {/* Scrolling Promo Ticker */}
+        <div className="mb-14">
+          <ServicePromoTicker />
         </div>
 
         {/* Indicative Pricing Tier Cards */}

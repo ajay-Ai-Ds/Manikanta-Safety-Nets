@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Shield, Eye, Settings, ArrowRight, Home } from "lucide-react";
 import { servicesData } from "@/utils/servicesData";
+import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 
 import type { Metadata } from "next";
 
@@ -30,32 +31,35 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Our Services | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
-      "Explore 18+ safety net solutions, invisible grills, and ceiling cloth hangers by Manikanta Safety Solutions across Bangalore serving Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
+      "Explore 19+ safety net solutions, invisible grills, and ceiling cloth hangers by Manikanta Safety Solutions across Bangalore serving Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
     images: ["/images/og-image.webp"],
   },
 };
 
 export default function ServicesPage() {
   const servicesList = Object.values(servicesData);
+  const safetyNetsCount = servicesList.filter((s) => s.category === "safety-nets").length;
+  const invisibleGrillsCount = servicesList.filter((s) => s.category === "invisible-grills").length;
+  const clothHangersCount = servicesList.filter((s) => s.category === "cloth-hangers").length;
 
   const categories = [
     {
       id: "safety-nets",
-      name: "Safety Nets (10 Services)",
+      name: `Safety Nets (${safetyNetsCount} Services)`,
       icon: <Shield className="w-5 h-5 text-[#E8972F]" />,
-      description: "Custom-fitted, high-tensile HDPE safety nets for child safety, pet security, bird prevention, anti-bird spikes, and sports grounds.",
+      description: "Custom-fitted, high-tensile HDPE safety nets for child safety, pet security, mosquito prevention, bird prevention, anti-bird spikes, and sports grounds.",
       items: servicesList.filter((s) => s.category === "safety-nets"),
     },
     {
       id: "invisible-grills",
-      name: "Invisible Grills (6 Services)",
+      name: `Invisible Grills (${invisibleGrillsCount} Services)`,
       icon: <Eye className="w-5 h-5 text-[#E8972F]" />,
       description: "Elegant, marine-grade SS316 cable grills for balconies, windows, staircases, child & pet safety, and commercial complexes.",
       items: servicesList.filter((s) => s.category === "invisible-grills"),
     },
     {
       id: "cloth-hangers",
-      name: "Cloth Hangers (2 Services)",
+      name: `Cloth Hangers (${clothHangersCount} Services)`,
       icon: <Settings className="w-5 h-5 text-[#E8972F]" />,
       description: "Rustproof dual-rope pulley and wall-mounted drying systems to optimize balcony floor space.",
       items: servicesList.filter((s) => s.category === "cloth-hangers"),
@@ -102,14 +106,17 @@ export default function ServicesPage() {
         </nav>
 
         {/* Page Title Header */}
-        <div className="text-left max-w-3xl mb-16 flex flex-col gap-3">
+        <div className="text-left max-w-3xl mb-8 flex flex-col gap-3">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 tracking-tight leading-tight">
             Our Installation Services
           </h1>
           <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
-            Choose from our 18 certified safety netting, structural invisible grills, and drying hanger services in Bangalore. Handcrafted to protect your space cleanly.
+            Choose from our 19 certified safety netting, structural invisible grills, and drying hanger services in Bangalore. Backed by 10 Years Warranty and Flat 20% Instant Discount!
           </p>
         </div>
+
+        {/* High-Converting 20% OFF & 10 Years Warranty Scrolling Ticker */}
+        <ServicePromoTicker />
 
         {/* Categories Loop */}
         <div className="flex flex-col gap-20">

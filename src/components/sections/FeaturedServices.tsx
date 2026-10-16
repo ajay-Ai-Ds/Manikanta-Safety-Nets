@@ -13,8 +13,10 @@ import {
   Shield,
   Eye,
   Settings,
+  Percent,
 } from "lucide-react";
 import { servicesData } from "@/utils/servicesData";
+import ServicePromoTicker from "@/components/sections/ServicePromoTicker";
 
 const categories = [
   {
@@ -30,6 +32,7 @@ const categories = [
       servicesData["children-safety-nets"],
       servicesData["pet-safety-nets"],
       servicesData["pigeon-safety-nets"],
+      servicesData["mosquito-nets"],
       servicesData["duct-area-safety-nets"],
       servicesData["anti-bird-spikes"],
       servicesData["monkey-safety-nets"],
@@ -84,7 +87,7 @@ export default function FeaturedServices() {
             All 18 Installation Services in Bangalore
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Scroll below to explore all our certified installation solutions. Every service includes free doorstep laser measurements, genuine SS304/SS316 hardware, and a written 5-year replacement warranty.
+            Scroll below to explore all our certified installation solutions. Every service includes free doorstep laser measurements, genuine SS304/SS316 hardware, official 10 Years Replacement Warranty, and Flat 20% Discount!
           </p>
 
           {/* Quick Jump Navigation */}
@@ -107,6 +110,9 @@ export default function FeaturedServices() {
             })}
           </div>
         </div>
+
+        {/* High-Converting Scrolling 20% OFF & 10 Years Warranty Animation */}
+        <ServicePromoTicker />
 
         {/* Category Sections (All 18 cards displayed in order) */}
         <div className="space-y-20">
@@ -167,18 +173,20 @@ export default function FeaturedServices() {
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-black/10 pointer-events-none" />
 
-                          {/* Category Badge & Warranty */}
+                          {/* Category Badge & 20% Discount */}
                           <div className="absolute top-3 left-3 bg-[#0D5C5C]/90 backdrop-blur-xs text-[#FDE047] text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-xs flex items-center gap-1">
                             <ShieldCheck className="w-3 h-3 text-[#E8972F]" />
                             <span>{service.categoryName}</span>
                           </div>
 
-                          <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-xs text-[#0D5C5C] text-[10px] font-extrabold px-2.5 py-1 rounded-md shadow-xs">
-                            {service.category === "invisible-grills"
-                              ? "10+ Years Guarantee"
-                              : service.category === "cloth-hangers"
-                              ? "3-Year Warranty"
-                              : "5-Year Warranty"}
+                          <div className="absolute top-3 right-3 bg-[#E8972F] text-slate-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow-md animate-pulse flex items-center gap-1">
+                            <Percent className="w-3 h-3" />
+                            <span>Flat 20% OFF</span>
+                          </div>
+
+                          <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-xs text-[#0D5C5C] text-[10px] font-extrabold px-2.5 py-1 rounded-md shadow-xs flex items-center gap-1">
+                            <Shield className="w-3 h-3 text-[#E8972F]" />
+                            <span>10 Years Warranty</span>
                           </div>
                         </div>
 
@@ -211,7 +219,7 @@ export default function FeaturedServices() {
                           href={`/services/${service.slug}`}
                           className="flex-1 bg-[#0D5C5C] hover:bg-[#E8972F] text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-all shadow-xs group/btn"
                         >
-                          <span>View Details</span>
+                          <span>Book (Save 20%)</span>
                           <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                         </Link>
                         <a

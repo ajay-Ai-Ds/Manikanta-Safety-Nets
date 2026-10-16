@@ -19,28 +19,28 @@ const categories: Category[] = [
   {
     id: 1,
     name: "Safety Net Solutions",
-    count: "10 Specialized Services",
-    image: "/images/hero/balconysafetynet.jpg",
+    count: "11 Specialized Services",
+    image: "/images/services/balcony-work-real.jpg",
     icon: <Shield className="w-6 h-6 text-white" />,
-    description: "Fortify balconies, stairwells, and open building shafts with certified UV-treated copolymer netting for total toddler and pet safety.",
+    description: "Fortify balconies, stairwells, and open building shafts with certified UV-treated copolymer netting and mosquito mesh backed by 10 Years Warranty and Flat 20% Discount.",
     slug: "safety-nets",
   },
   {
     id: 2,
     name: "SS316 Invisible Grills",
     count: "5 Architectural Options",
-    image: "/images/main-images/Balcony-Grills.jpg",
+    image: "/images/services/balcony-invisible-grills-real.jpg",
     icon: <Eye className="w-6 h-6 text-white" />,
-    description: "Preserve panoramic 180-degree outdoor views while securing balconies and windows with marine SS316 stainless cables backed by a 10+ Years Guarantee.",
+    description: "Preserve panoramic 180-degree outdoor views while securing balconies and windows with marine SS316 stainless cables backed by a 10 Years Warranty.",
     slug: "invisible-grills",
   },
   {
     id: 3,
     name: "Cloth Drying Systems",
     count: "3 Space-Saving Designs",
-    image: "/images/main-images/cloth-Hangers3.jpg",
+    image: "/images/services/ceiling-cloth-hangers-1.jpg",
     icon: <Settings className="w-6 h-6 text-white" />,
-    description: "Reclaim 100% of balcony floor space with smooth dual-pulley stainless steel ceiling hoists and foldable wall racks.",
+    description: "Reclaim 100% of balcony floor space with smooth dual-pulley stainless steel ceiling hoists with 10 Years Guarantee and Flat 20% Discount.",
     slug: "cloth-hangers",
   },
 ];
@@ -90,9 +90,14 @@ export default function ServiceCategories() {
                   <div className="text-[#E8972F]">{category.icon}</div>
                 </div>
 
-                {/* Service count label */}
-                <div className="absolute bottom-4 left-4 bg-white/20 backdrop-blur-xs text-white text-xs font-extrabold px-3.5 py-1.5 rounded-full border border-white/30">
-                  {category.count}
+                {/* Service count label & Discount badge */}
+                <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                  <div className="bg-white/20 backdrop-blur-xs text-white text-xs font-extrabold px-3 py-1.5 rounded-full border border-white/30">
+                    {category.count}
+                  </div>
+                  <div className="bg-[#E8972F] text-slate-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow-md animate-pulse">
+                    Flat 20% OFF
+                  </div>
                 </div>
               </div>
 

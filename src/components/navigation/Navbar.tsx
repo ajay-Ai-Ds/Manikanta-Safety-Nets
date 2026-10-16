@@ -23,6 +23,7 @@ const safetyNetsServices = [
   { name: "Children Safety Nets", href: "/services/children-safety-nets" },
   { name: "Pet Safety Nets", href: "/services/pet-safety-nets" },
   { name: "Pigeon Safety Nets", href: "/services/pigeon-safety-nets" },
+  { name: "Mosquito Nets for Windows & Balconies", href: "/services/mosquito-nets" },
   { name: "Sports Nets", href: "/services/sports-nets" },
   { name: "Construction Safety Nets", href: "/services/construction-safety-nets" },
   { name: "Duct Area Safety Nets", href: "/services/duct-area-safety-nets" },
@@ -127,16 +128,22 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Center: Banner statement */}
-          <div className="hidden lg:flex items-center gap-2 text-[11px] font-semibold text-slate-300 tracking-wide uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-[#E8972F]" />
-            <span>Free Doorstep Inspection | Serving Across Bangalore & Suburbs</span>
+          {/* Center: High-Converting Offer Banner */}
+          <div className="hidden lg:flex items-center gap-2 text-[11px] font-bold text-white tracking-wide">
+            <span className="bg-[#E8972F] text-slate-950 font-black px-2 py-0.5 rounded-full text-[10px] uppercase shadow-xs animate-pulse">
+              Flat 20% OFF
+            </span>
+            <span className="text-amber-200">Limited Period Offer:</span>
+            <span className="text-white">10 Years Replacement Warranty on All Installations | Free Doorstep Inspection</span>
           </div>
 
           {/* Right: Email & Mobile WhatsApp Badge */}
           <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+            <span className="flex sm:hidden items-center gap-1 bg-[#E8972F] text-slate-950 px-2 py-0.5 rounded text-[10px] font-black uppercase">
+              20% OFF
+            </span>
             <a
-              href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
+              href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20claim%20the%20Flat%2020%25%20Discount%20and%2010%20Years%20Warranty%20for%20safety%20nets%2Finvisible%20grills."
               target="_blank"
               rel="noopener noreferrer"
               className="flex sm:hidden items-center gap-1 bg-[#25D366]/20 hover:bg-[#25D366]/30 text-[#25D366] px-2.5 py-0.5 rounded border border-[#25D366]/40 text-[11px] font-bold transition-all"

@@ -107,8 +107,8 @@ export default function ContactForm() {
           {/* Info Card */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="flex flex-col gap-3">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#E8972F] bg-white/10 border border-[#E8972F]/30 px-3.5 py-1.5 rounded-full inline-block self-start">
-                Get a Quote
+              <span className="text-xs font-black uppercase tracking-widest text-slate-950 bg-[#E8972F] px-3.5 py-1.5 rounded-full inline-block self-start animate-pulse shadow-md">
+                🔥 Flat 20% OFF • 10 Years Warranty Included
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
                 Request a Free On-Site Measurement & Pricing Quote

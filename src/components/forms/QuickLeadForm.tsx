@@ -83,9 +83,8 @@ export default function QuickLeadForm({
     <div className="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/40 text-slate-800">
       {/* Form Header */}
       <div className="border-b border-slate-100 pb-4 mb-5">
-        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[11px] font-bold rounded-full mb-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>100% Free Inspection &amp; Measurement</span>
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#E8972F] text-slate-950 text-[11px] font-black rounded-full mb-2 uppercase tracking-wide animate-pulse">
+          <span>🔥 Flat 20% OFF + 10 Years Warranty</span>
         </div>
         <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
           Get Instant Quote in {cityName}

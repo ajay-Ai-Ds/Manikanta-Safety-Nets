@@ -21,7 +21,7 @@ export default function CustomerReviews() {
       rating: 5,
       date: "May 2026",
       comment:
-        "Extremely responsive and professional. The rigging team arrived within hours of our inquiry in Electronic City, performed precision concrete anchoring, and vacuum-cleaned all drilling dust before handing over the 5-year warranty card.",
+        "Extremely responsive and professional. The rigging team arrived within hours of our inquiry in Electronic City, performed precision concrete anchoring, and vacuum-cleaned all drilling dust before handing over the 10-year replacement warranty card.",
     },
     {
       name: "Meera Chandrasekhar",

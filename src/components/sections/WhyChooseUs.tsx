@@ -12,8 +12,8 @@ export default function WhyChooseUs() {
     },
     {
       icon: Award,
-      title: "Direct Written Guarantee Up to 10 Years",
-      desc: "Every installation includes a genuine stamped warranty card covering mesh tensile integrity, anchor tension stability, and corrosion immunity for complete homeowner peace of mind.",
+      title: "Official 10-Year Replacement Warranty",
+      desc: "Every installation includes a genuine stamped 10-year warranty card covering mesh tensile integrity, anchor tension stability, and corrosion immunity for complete homeowner peace of mind.",
     },
     {
       icon: Clock,
@@ -43,13 +43,13 @@ export default function WhyChooseUs() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-[#0D5C5C]/10 text-[#0D5C5C] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
             <Sparkles className="w-3.5 h-3.5 text-[#E8972F]" />
-            <span>The Manikanta Safety Solutions Benchmark</span>
+            <span>Flat 20% OFF Deal • 10-Year Warranty</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-[#0D5C5C] tracking-tight">
             What Sets Our High-Rise Safety Installations Apart
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-            From tech park condominiums in Whitefield and Electronic City to luxury residences in Koramangala, Indiranagar, and Hebbal, we deliver engineered safety that protects your family without sacrificing natural light or scenic skyline views.
+            From tech park condominiums in Whitefield and Electronic City to luxury residences in Koramangala, Indiranagar, and Hebbal, we deliver engineered safety that protects your family with <strong className="text-[#0D5C5C]">Flat 20% Discount and 10 Years Warranty</strong> on every installation.
           </p>
         </div>
 

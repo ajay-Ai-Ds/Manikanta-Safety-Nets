@@ -40,7 +40,12 @@ export default function FAQAccordion() {
     {
       question: "What is the typical lifespan and warranty coverage provided by Manikanta Safety Solutions?",
       answer:
-        "We provide a comprehensive written warranty ranging from 5 years on UV-stabilized copolymer safety nets up to 10 years on SS316 marine invisible grills, covering rust resistance, anchoring firmness, and tensile integrity.",
+        "Every installation by Manikanta Safety Solutions includes an official written 10-Year Replacement Warranty covering mesh tensile strength, UV stabilization against sun degradation, anchor tension firmness, and 100% rustproof marine hardware.",
+    },
+    {
+      question: "How can I avail the current Flat 20% Discount offer?",
+      answer:
+        "Our Flat 20% Discount is automatically applied to all new balcony safety net, pigeon net, invisible grill, and cloth drying hanger bookings across Bangalore! Simply call or WhatsApp +91 95503 18183 to schedule your free doorstep inspection and lock in the 20% savings.",
     },
     {
       question: "Can individual rods on your ceiling cloth drying racks be operated independently?",

@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { Shield, ChevronLeft, ChevronRight, Phone, MessageSquare, Award, ArrowRight, CheckCircle2 } from "lucide-react";
 
 interface Slide {
@@ -26,20 +25,20 @@ const slides: Slide[] = [
     subtitle: "Safeguard your loved ones with structural-grade stainless steel wire systems and certified safety netting tailored for Bangalore's high-rise towers.",
     image: "/images/main-images/Balcony-Grills.jpg",
     altText: "Manikanta Safety Solutions custom SS316 marine-grade invisible balcony grills overlooking Bangalore skyline",
-    ctaText: "Explore Invisible Grills",
+    ctaText: "Explore Invisible Grills (20% OFF)",
     ctaLink: "/services/balcony-invisible-grills",
-    badge: "10-Year Warranty • 100% Unobstructed Views",
+    badge: "10-Year Warranty • Flat 20% OFF • 100% Unobstructed Views",
   },
   {
     id: 2,
     title: "Engineered Child Fall Protection &",
     highlight: "Heavy-Duty Balcony Safety Nets",
     subtitle: "High-density UV-stabilized polymer nets secured with precision concrete anchoring to prevent toddler and pet mishaps without blocking fresh air.",
-    image: "/images/hero/balconysafetynet.jpg",
+    image: "/images/services/balcony-work-real.jpg",
     altText: "Manikanta Safety Solutions heavy-duty childproof balcony fall protection netting in Bangalore apartment",
-    ctaText: "Discover Safety Nets",
+    ctaText: "Discover Safety Nets (20% OFF)",
     ctaLink: "/services/balcony-safety-nets",
-    badge: "Tested 140kg+ Point Load Resistance",
+    badge: "10-Year Warranty • Flat 20% OFF • Tested 140kg+ Load",
   },
   {
     id: 3,
@@ -48,31 +47,42 @@ const slides: Slide[] = [
     subtitle: "Stop pigeon nesting, foul droppings, and health hazards across balcony ledges and AC units with long-lasting, weather-resistant translucent mesh.",
     image: "/images/hero/pigeonnet.jpg",
     altText: "Manikanta Safety Solutions translucent anti-pigeon netting installed across residential utility balcony in Bangalore",
-    ctaText: "Pigeon Netting Solutions",
+    ctaText: "Pigeon Netting Solutions (20% OFF)",
     ctaLink: "/services/pigeon-safety-nets",
-    badge: "Humane • Zero View Obstruction",
+    badge: "10-Year Warranty • Flat 20% OFF • Humane Bird Barrier",
   },
   {
     id: 4,
     title: "Multi-Story Building Protection &",
     highlight: "Duct Shaft Safety Nets",
     subtitle: "Full vertical enclosure of internal ventilation shafts, plumbing chaseways, and open courtyards with certified industrial rigging.",
-    image: "/images/main-images/Duct-Area-3.jpg",
+    image: "/images/services/building-duct-pigeon-netting.jpg",
     altText: "Manikanta Safety Solutions industrial duct area and building shaft safety net rigging in Bangalore",
-    ctaText: "Duct Area Netting",
+    ctaText: "Duct Area Netting (20% OFF)",
     ctaLink: "/services/duct-area-safety-nets",
-    badge: "Certified Rope-Access Technicians",
+    badge: "10-Year Warranty • Flat 20% OFF • Certified Riggers",
   },
   {
     id: 5,
     title: "Effortless Ceiling Hoist Systems &",
     highlight: "Stainless Cloth Drying Hangers",
     subtitle: "Smooth dual-pulley SS304 drying rods that lift heavy laundry up to ceiling level, freeing up 100% of your usable balcony floor space.",
-    image: "/images/main-images/cloth-Hangers3.jpg",
+    image: "/images/services/ceiling-cloth-hangers-1.jpg",
     altText: "Manikanta Safety Solutions ceiling-mounted stainless steel pulley cloth drying rack in Bangalore home",
-    ctaText: "Explore Cloth Hangers",
+    ctaText: "Explore Cloth Hangers (20% OFF)",
     ctaLink: "/services/ceiling-cloth-hangers",
-    badge: "Reclaims Full Balcony Space",
+    badge: "10-Year Warranty • Flat 20% OFF • Reclaims Full Space",
+  },
+  {
+    id: 6,
+    title: "100% Insect & Mosquito Defense &",
+    highlight: "Magnetic Window Mosquito Nets",
+    subtitle: "Keep your home dengue-free and well-ventilated with premium fiberglass and SS mosquito screens custom-fitted for Bangalore apartments.",
+    image: "/images/services/mosquito-net.jpg",
+    altText: "Manikanta Safety Solutions magnetic mosquito nets for windows and balconies in Bangalore",
+    ctaText: "Explore Mosquito Nets (20% OFF)",
+    ctaLink: "/services/mosquito-nets",
+    badge: "10-Year Warranty • Flat 20% OFF • 100% Bug-Free Breeze",
   },
 ];
 
@@ -101,115 +111,90 @@ export default function HeroCarousel() {
   const slide = slides[current];
 
   return (
-    <section className="relative min-h-[580px] sm:min-h-[640px] md:min-h-[700px] bg-[#063333] overflow-hidden flex items-center">
-      {/* Background Image Carousel with Smooth Fade */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={slide.id}
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="absolute inset-0 z-0"
+    <section className="relative min-h-[580px] sm:min-h-[640px] md:min-h-[700px] bg-slate-950 overflow-hidden flex items-center">
+      {/* Background Image Carousel with Smooth Fade & Zero Color Tint */}
+      {slides.map((s, idx) => (
+        <div
+          key={s.id}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            idx === current ? "opacity-100 z-0" : "opacity-0 pointer-events-none -z-10"
+          }`}
         >
           <Image
-            src={slide.image}
-            alt={slide.altText}
+            src={s.image}
+            alt={s.altText}
             fill
-            priority={slide.id === 1}
+            priority={idx === 0}
             sizes="100vw"
             className="object-cover object-center"
           />
-          {/* Enhanced Multi-stop Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#063333] via-[#063333]/85 to-[#0D5C5C]/50 sm:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#063333] via-transparent to-black/30" />
-        </motion.div>
-      </AnimatePresence>
+          {/* Clean Natural Scrim Overlay: Eliminates heavy green/teal tint so real installations are crisp and visible */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent sm:via-black/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20" />
+        </div>
+      ))}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Main Hero Copy (Left) */}
           <div className="lg:col-span-8 flex flex-col gap-5 text-left">
-            {/* Top Badge */}
-            <motion.div
-              key={`badge-${slide.id}`}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="inline-flex items-center gap-2 self-start bg-white/10 backdrop-blur-md border border-white/20 text-white px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-xs"
-            >
-              <Award className="w-4 h-4 text-[#E8972F]" />
-              <span>{slide.badge}</span>
-            </motion.div>
+            {/* Top Badges: Flat 20% OFF + 10-Year Warranty */}
+            <div className="flex flex-wrap items-center gap-2.5">
+              <div className="inline-flex items-center gap-1.5 bg-[#E8972F] text-slate-950 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-md animate-pulse">
+                <span>🔥 Flat 20% OFF Today</span>
+              </div>
+              <div className="inline-flex items-center gap-2 bg-black/40 hover:bg-black/50 backdrop-blur-md border border-white/20 text-white px-3.5 py-1 rounded-full text-xs font-semibold shadow-sm transition-colors">
+                <Award className="w-4 h-4 text-[#E8972F]" />
+                <span>10-Year Replacement Warranty • Guaranteed</span>
+              </div>
+            </div>
 
             {/* Dynamic Main Headline */}
-            <motion.div
-              key={`title-${slide.id}`}
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="flex flex-col gap-1"
-            >
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
+            <div className="flex flex-col gap-1 transition-all duration-300">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] drop-shadow-md">
                 {slide.title}{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E8972F] via-[#F5B054] to-amber-200">
                   {slide.highlight}
                 </span>
               </h1>
-            </motion.div>
+            </div>
 
             {/* Subtitle Description */}
-            <motion.p
-              key={`desc-${slide.id}`}
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-slate-200 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed"
-            >
+            <p className="text-slate-100 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed drop-shadow-sm font-normal">
               {slide.subtitle}
-            </motion.p>
+            </p>
 
-            {/* Key Value Propositions */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-white/90 text-xs sm:text-sm font-medium"
-            >
+            {/* Key Value Propositions with 10 Years Warranty & 20% OFF */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-white/95 text-xs sm:text-sm font-medium">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#E8972F] shrink-0" />
                 <span>Zero-Cost Inspection</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-[#E8972F] shrink-0" />
-                <span>5 to 10 Yr Replacement Warranty</span>
+                <span className="font-bold text-amber-200">10 Years Warranty</span>
               </div>
               <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
                 <CheckCircle2 className="w-4 h-4 text-[#E8972F] shrink-0" />
-                <span>Same-Day Installation</span>
+                <span className="font-bold text-amber-300">Flat 20% Discount</span>
               </div>
-            </motion.div>
+            </div>
 
             {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="flex flex-wrap items-center gap-4 pt-4"
-            >
+            <div className="flex flex-wrap items-center gap-3.5 sm:gap-4 pt-4">
               {/* Primary Action Button */}
               <Link
                 href={slide.ctaLink}
-                className="bg-gradient-to-r from-[#0D5C5C] to-[#4A9B9B] hover:from-[#4A9B9B] hover:to-[#0D5C5C] text-white font-extrabold px-7 py-3.5 rounded-full text-sm sm:text-base transition-all duration-300 shadow-[0_10px_25px_rgba(13,92,92,0.4)] hover:shadow-[0_15px_30px_rgba(13,92,92,0.6)] flex items-center gap-2 group cursor-pointer"
+                className="bg-gradient-to-r from-[#E8972F] to-[#F5B054] hover:from-[#F5B054] hover:to-[#E8972F] text-slate-950 font-black px-7 py-3.5 rounded-full text-sm sm:text-base transition-all duration-300 shadow-[0_10px_25px_rgba(232,151,47,0.35)] hover:shadow-[0_15px_30px_rgba(232,151,47,0.5)] flex items-center gap-2 group cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
               >
-                <span>{slide.ctaText}</span>
+                <span>Claim 20% OFF &amp; Book Free Visit</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
 
               {/* Direct Phone Call Button */}
               <a
                 href="tel:+919550318183"
-                className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3.5 rounded-full text-sm sm:text-base backdrop-blur-md border border-white/20 transition-all duration-300 flex items-center gap-2"
+                className="bg-white/15 hover:bg-white/25 text-white font-bold px-6 py-3.5 rounded-full text-sm sm:text-base backdrop-blur-md border border-white/25 transition-all duration-300 flex items-center gap-2 shadow-sm hover:scale-[1.02] active:scale-[0.98]"
               >
                 <Phone className="w-4 h-4 text-[#E8972F]" />
                 <span>Call +91 95503 18183</span>
@@ -217,22 +202,22 @@ export default function HeroCarousel() {
 
               {/* WhatsApp Quick Quote */}
               <a
-                href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
+                href="https://wa.me/919550318183?text=Hi%20Manikanta%20Safety%20Solutions%2C%20I%20would%20like%20to%20claim%20the%20Flat%2020%25%20Discount%20and%2010%20Years%20Warranty%20for%20safety%20nets%2Finvisible%20grills."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold p-3.5 rounded-full text-sm transition-all duration-300 shadow-md hover:scale-105 flex items-center justify-center"
+                className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold p-3.5 rounded-full text-sm transition-all duration-300 shadow-md hover:scale-105 active:scale-95 flex items-center justify-center"
                 aria-label="WhatsApp Inquiry"
               >
                 <MessageSquare className="w-5 h-5 fill-current" />
               </a>
-            </motion.div>
+            </div>
           </div>
 
           {/* Quick Floating Metrics & Trust Indicator (Right Column Desktop) */}
           <div className="hidden lg:flex lg:col-span-4 flex-col gap-4">
-            <div className="bg-[#063333]/70 backdrop-blur-xl border border-white/10 p-6 rounded-3xl text-white shadow-2xl flex flex-col gap-4">
+            <div className="bg-slate-900/65 backdrop-blur-xl border border-white/15 p-6 rounded-3xl text-white shadow-2xl flex flex-col gap-4">
               <div className="flex items-center gap-3">
-                <div className="p-3 bg-[#0D5C5C] rounded-2xl text-[#E8972F]">
+                <div className="p-3 bg-white/10 border border-white/10 rounded-2xl text-[#E8972F]">
                   <Shield className="w-6 h-6" />
                 </div>
                 <div>
@@ -241,10 +226,25 @@ export default function HeroCarousel() {
                 </div>
               </div>
 
+              {/* Special Discount & Warranty Callout in Card */}
+              <div className="bg-[#E8972F]/20 border border-[#E8972F]/50 rounded-2xl p-3 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="bg-[#E8972F] text-slate-950 font-black text-[10px] px-2 py-0.5 rounded-full uppercase">
+                    Limited Deal
+                  </span>
+                  <span className="text-xs font-bold text-amber-200">Flat 20% OFF</span>
+                </div>
+                <span className="text-xs font-black text-[#E8972F]">10-Yr Warranty</span>
+              </div>
+
               <div className="border-t border-white/10 pt-4 flex flex-col gap-2.5 text-xs text-slate-200">
                 <div className="flex justify-between items-center">
                   <span>Completed Installations</span>
                   <span className="font-bold text-[#E8972F] text-sm">3,850+</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Warranty Coverage</span>
+                  <span className="font-bold text-[#E8972F] text-sm">10 Years Direct</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span>Customer Satisfaction</span>
@@ -258,9 +258,9 @@ export default function HeroCarousel() {
 
               <Link
                 href="/contact"
-                className="w-full text-center bg-[#E8972F] hover:bg-[#F5B054] text-slate-900 font-extrabold text-xs py-3 rounded-xl transition-colors shadow-sm"
+                className="w-full text-center bg-[#E8972F] hover:bg-[#F5B054] text-slate-950 font-extrabold text-xs py-3 rounded-xl transition-all shadow-md hover:shadow-lg"
               >
-                Book Doorstep Measurement
+                Book Doorstep Measurement (Save 20%)
               </Link>
             </div>
           </div>
@@ -271,14 +271,14 @@ export default function HeroCarousel() {
       <div className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 z-20 flex items-center gap-3">
         <button
           onClick={prevSlide}
-          className="p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
+          className="p-3 rounded-full bg-black/40 hover:bg-black/60 text-white backdrop-blur-md border border-white/20 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
           aria-label="Previous Slide"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
         <button
           onClick={nextSlide}
-          className="p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
+          className="p-3 rounded-full bg-black/40 hover:bg-black/60 text-white backdrop-blur-md border border-white/20 transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
           aria-label="Next Slide"
         >
           <ChevronRight className="w-5 h-5" />

@@ -40,7 +40,7 @@ const localTraits: Record<
     desc: "Whitefield is a prime East Bangalore IT corridor in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "luxury high-rise IT corridor apartments, gated villa communities, and tech townships",
     localizedDetail: "High-rise towers along ITPL and EPIP zone require certified SS316 marine-grade invisible grills and heavy-duty safety netting for maximum child safety and bird deterrence.",
-    tagline: "Premier safety nets & SS316 invisible grills in Whitefield — certified installation with 5-year warranty.",
+    tagline: "Premier safety nets & SS316 invisible grills in Whitefield — certified installation with 10-year warranty.",
     localities: ["ITPL Road", "EPIP Zone", "Kadugodi", "Hope Farm Junction", "Varthur Road", "Hoodi", "Channasandra"],
     landmarks: ["ITPL", "Phoenix Marketcity", "Nexus Shantiniketan Mall", "Manipal Hospital Whitefield", "Hope Farm"],
     customerReviews: [
@@ -148,7 +148,7 @@ const localTraits: Record<
     desc: "Electronic City is a prime South Bangalore electronics and IT township in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "high-density multi-story apartment townships, high-rise gated societies, and tech workforce condominiums",
     localizedDetail: "High-rise towers spanning 10 to 30 floors require heavy-duty balcony fall protection netting and pigeon containment mesh to safeguard children and keep utility spaces hygienic.",
-    tagline: "Certified high-rise safety nets & invisible grills in Electronic City — 5-year replacement warranty.",
+    tagline: "Certified high-rise safety nets & invisible grills in Electronic City — 10-year replacement warranty.",
     localities: ["Phase 1", "Phase 2", "Neeladri Nagar", "Doddathoguru", "Konappana Agrahara", "Bettadasanapura", "Ananth Nagar"],
     landmarks: ["Infosys Campus", "Wipro Gate", "Neeladri High Street", "Electronic City Toll Gate", "PES University Area"],
     customerReviews: [
@@ -364,7 +364,7 @@ const localTraits: Record<
     desc: "Hebbal is a prime North Bangalore gateway and lake-front hub in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "ultra-luxury high-rise residential towers, lake-view penthouses, and gated condominiums",
     localizedDetail: "High-altitude towers overlooking Hebbal Lake experience strong gusts and heavy bird activity, demanding high-tensile marine SS316 invisible grills and UV-stabilized anti-bird nets.",
-    tagline: "High-rise invisible grills & balcony safety netting in Hebbal — lake-view safety with 5-year warranty.",
+    tagline: "High-rise invisible grills & balcony safety netting in Hebbal — lake-view safety with 10-year warranty.",
     localities: ["Hebbal Kempapura", "Chola Nagar", "Ganga Nagar", "Bellary Road", "Manorayana Palya", "Bhoopasandra", "Lal Bahadur Shastri Nagar"],
     landmarks: ["Hebbal Flyover", "Hebbal Lake", "Manyata Tech Park Gateway", "Columbia Asia Hospital Hebbal", "Esteem Mall"],
     customerReviews: [
@@ -499,7 +499,7 @@ const localTraits: Record<
     desc: "Varthur is a prime East Bangalore lake township in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "sprawling lakeside apartment complexes, luxury villa plots, and gated high-rises",
     localizedDetail: "Lakeside breeze and high bird activity make anti-pigeon netting and strong child safety nets an absolute necessity.",
-    tagline: "Balcony safety nets & invisible grills in Varthur — lake-view protection with 5-year warranty.",
+    tagline: "Balcony safety nets & invisible grills in Varthur — lake-view protection with 10-year warranty.",
     localities: ["Varthur Road", "Gunjur", "Balagere Road", "Sorahunase", "KK Campus Area"],
     landmarks: ["Varthur Lake", "Prestige Lakeside Habitat", "Columbia Asia Varthur", "Chrysalis High"],
     customerReviews: [
@@ -823,7 +823,7 @@ const localTraits: Record<
     desc: "Gottigere is a prime South Bannerghatta corridor in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "expanding gated townships, high-rise apartment towers, and villa projects",
     localizedDetail: "High-wind resistance netting and monkey safety nets are essential for balconies near greenery and open plots.",
-    tagline: "Heavy-duty safety nets & monkey barriers in Gottigere — 5-year warranty backed.",
+    tagline: "Heavy-duty safety nets & monkey barriers in Gottigere — 10-year warranty backed.",
     localities: ["Gottigere Main Road", "Nice Road Junction", "Basavanapura", "Kembathalli Road", "AMC College Road"],
     landmarks: ["NICE Road Toll Plaza", "AMC Engineering College", "Meenakshi Temple", "Royal Meenakshi Mall"],
     customerReviews: [
@@ -1120,7 +1120,7 @@ const localTraits: Record<
     desc: "Rajajinagar is a prime Central-West Bangalore prime residential & industrial hub in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "high-rise luxury condominiums, established block apartments, and commercial complexes",
     localizedDetail: "High-rise towers near Orion Mall require certified child safety nets and pigeon spikes for ledges.",
-    tagline: "High-rise safety nets & invisible grills in Rajajinagar — certified 5-year warranty protection.",
+    tagline: "High-rise safety nets & invisible grills in Rajajinagar — certified 10-year warranty protection.",
     localities: ["1st Block", "2nd Block", "3rd Block", "4th Block", "5th Block", "6th Block", "Mahalakshmi Layout"],
     landmarks: ["Orion Mall", "ISKCON Temple Bangalore", "World Trade Center", "Rajajinagar Metro Station", "Brigade Gateway"],
     customerReviews: [
@@ -1363,7 +1363,7 @@ const localTraits: Record<
     desc: "Thanisandra is a prime North Bangalore Manyata Tech Park corridor in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "mega high-rise apartment townships, gated condominiums, and tech worker societies",
     localizedDetail: "High-rise towers near Manyata Tech Park require certified child safety nets and SS316 invisible grills for high wind speeds.",
-    tagline: "High-rise safety nets & invisible grills in Thanisandra — 5-year replacement warranty.",
+    tagline: "High-rise safety nets & invisible grills in Thanisandra — 10-year replacement warranty.",
     localities: ["Thanisandra Main Road", "Manyata Residency", "Bhartiya City Area", "Sampigehalli", "Rachenahalli"],
     landmarks: ["Manyata Tech Park Back Gate", "Bhartiya City Mall", "Rachenahalli Lake", "Elements Mall"],
     customerReviews: [
@@ -1849,7 +1849,7 @@ const localTraits: Record<
     desc: "Seegehalli is a prime East Bangalore burgeoning high-rise hub in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "mega gated apartment townships, high-rise condominiums, and villa enclaves",
     localizedDetail: "Modern high-rise towers require certified child safety nets with narrow anchor spacing and SS316 invisible grills.",
-    tagline: "Balcony safety nets & invisible grills in Seegehalli — 5-year replacement guarantee.",
+    tagline: "Balcony safety nets & invisible grills in Seegehalli — 10-year replacement guarantee.",
     localities: ["Seegehalli Main Road", "Kadugodi Link", "Hennur-Bagalur Link", "Channasandra Road"],
     landmarks: ["Prestige Tranquillity", "Seegehalli Lake", "Belathur Junction", "East Point Hospital"],
     customerReviews: [
@@ -1957,7 +1957,7 @@ const localTraits: Record<
     desc: "Kogilu is a prime North Bangalore lake-view residential suburb in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "modern high-rise apartment societies, gated communities, and lake-facing towers",
     localizedDetail: "Lakeside breeze and pigeon activity require UV-fortified anti-bird netting and child safety netting.",
-    tagline: "Balcony safety nets & invisible grills in Kogilu — 5-year replacement warranty.",
+    tagline: "Balcony safety nets & invisible grills in Kogilu — 10-year replacement warranty.",
     localities: ["Kogilu Main Road", "Yelahanka Border", "Agrahara Layout", "Maruthi Nagar", "Thirumenahalli"],
     landmarks: ["Kogilu Lake", "Yelahanka Satellite Town", "Reva University", "International Airport Road"],
     customerReviews: [
@@ -2362,7 +2362,7 @@ const localTraits: Record<
     desc: "Hosa Road is a prime Electronic City & Sarjapur connector corridor in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "high-rise apartment townships, gated condominiums, and tech worker societies",
     localizedDetail: "High-rise towers spanning 15+ floors require certified child safety nets and SS316 invisible grills.",
-    tagline: "High-rise safety nets & invisible grills on Hosa Road — certified 5-year replacement warranty.",
+    tagline: "High-rise safety nets & invisible grills on Hosa Road — certified 10-year replacement warranty.",
     localities: ["Hosa Road Junction", "Central Jail Road", "Kasavanahalli Link", "Silver County", "Hosur Highway"],
     landmarks: ["Hosa Road Metro Station", "Amrita University", "Play Arena Link", "Electronic City Toll"],
     customerReviews: [
@@ -2524,7 +2524,7 @@ const localTraits: Record<
     desc: "Doddaballapur Road is a prime North Bangalore industrial & university corridor in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "university township apartments, gated villa communities, and high-rise flats",
     localizedDetail: "High-altitude balconies along the North corridor require UV-fortified child safety nets and invisible grills.",
-    tagline: "Safety nets & invisible grills on Doddaballapur Road — 5-year replacement warranty.",
+    tagline: "Safety nets & invisible grills on Doddaballapur Road — 10-year replacement warranty.",
     localities: ["Yelahanka Extension", "Rajanukunte", "Majara Hosahalli", "Apparel Park", "BMSIT Campus Area"],
     landmarks: ["BMS Institute of Technology", "Rajanukunte Railway Station", "Doddaballapur Apparel Park", "Gitame University"],
     customerReviews: [
@@ -2605,7 +2605,7 @@ const localTraits: Record<
     desc: "Chandapura is a prime South Bangalore Electronic City extension hub in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "modern high-rise apartment townships, affordable gated societies, and residential layouts",
     localizedDetail: "High-rise towers require certified child safety nets with narrow anchor spacing and pigeon defense netting.",
-    tagline: "High-rise safety nets & invisible grills in Chandapura — 5-year replacement guarantee.",
+    tagline: "High-rise safety nets & invisible grills in Chandapura — 10-year replacement guarantee.",
     localities: ["Chandapura Circle", "Anekal Main Road", "Surya City", "Heelalige Link", "Muthanallur Road"],
     landmarks: ["Chandapura Circle Flyover", "Surya City Township", "Heelalige Railway Station", "Alliance University"],
     customerReviews: [
@@ -2794,7 +2794,7 @@ const localTraits: Record<
     desc: "Kothanur is a prime North-East Bangalore Hennur corridor in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "modern gated apartment societies, high-rise condominiums, and villa enclaves",
     localizedDetail: "High-floor balconies require certified child fall protection nets and sleek invisible wire grills.",
-    tagline: "Balcony safety nets and invisible grills in Kothanur — 5-year replacement warranty.",
+    tagline: "Balcony safety nets and invisible grills in Kothanur — 10-year replacement warranty.",
     localities: ["Hennur-Bagalur Road", "Geddalahalli Link", "Byrathi Cross", "Manning Lake Area"],
     landmarks: ["Kothanur Bus Depot", "Kristu Jayanti College", "Bio-Miracle Ground"],
     customerReviews: [
@@ -2956,7 +2956,7 @@ const localTraits: Record<
     desc: "Kanakapura Road Metro Corridor is a prime South Bangalore green metro expansion hub in Bangalore, featuring modern residential buildings, vibrant neighborhoods, and high-growth commercial corridors.",
     housingType: "luxury high-rise townships, lake-view apartments, and gated villa communities",
     localizedDetail: "High-floor balconies along the green metro corridor require certified safety nets and SS316 invisible grills.",
-    tagline: "Balcony safety nets and SS316 invisible grills on Kanakapura Metro Corridor — 5-year warranty.",
+    tagline: "Balcony safety nets and SS316 invisible grills on Kanakapura Metro Corridor — 10-year warranty.",
     localities: ["Vajarahalli Metro Station", "Thalaghattapura Metro", "Konanakunte Cross Metro", "Silk Institute Metro"],
     landmarks: ["Forum South Bangalore Mall", "Art of Living Centre", "KSIT Campus"],
     customerReviews: [

@@ -6,7 +6,7 @@ import { generateBreadcrumbSchema } from "@/utils/schema";
 export const metadata: Metadata = {
   title: "Terms & Conditions | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
   description:
-    "Official Terms and Conditions for Manikanta Safety Solutions. Review our transparent service pricing, 3-to-5 year warranty certificate guidelines, humane bird control standards, and free measurement terms across Bangalore.",
+    "Official Terms and Conditions for Manikanta Safety Solutions. Review our transparent service pricing, 10-year warranty certificate guidelines, humane bird control standards, and free measurement terms across Bangalore.",
   alternates: {
     canonical: "/terms-and-conditions",
   },
@@ -69,7 +69,7 @@ export default function TermsAndConditionsPage() {
             </div>
             <div className="text-right sm:border-l sm:border-slate-100 sm:pl-6 hidden sm:block">
               <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Service Guarantee</span>
-              <span className="text-sm font-bold text-emerald-600">3 to 5 Year Warranty</span>
+              <span className="text-sm font-bold text-emerald-600">10-Year Replacement Warranty</span>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ export default function TermsAndConditionsPage() {
               <FileCheck className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-xs font-bold text-slate-900">Official Warranty Card</h4>
-                <p className="text-xs text-slate-600 mt-0.5">Written 3-to-5 year warranty certificate provided upon installation signoff.</p>
+                <p className="text-xs text-slate-600 mt-0.5">Written 10-year replacement warranty certificate provided upon installation signoff.</p>
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function TermsAndConditionsPage() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div className="p-3 bg-emerald-50/50 rounded-xl border border-emerald-100">
-                  <strong className="text-emerald-900 block mb-1">What is Covered (3 to 5 Years):</strong>
+                  <strong className="text-emerald-900 block mb-1">What is Covered (10-Year Warranty):</strong>
                   <ul className="list-disc pl-4 space-y-1 text-slate-600">
                     <li>Premature UV degradation or brittleness of HDPE copolymer netting under normal outdoor sunlight.</li>
                     <li>Rust or corrosion on SS316 marine-grade stainless steel cables &amp; anchors.</li>

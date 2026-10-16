@@ -147,7 +147,7 @@ export default function PrivacyPolicyPage() {
                 </div>
                 <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
                   <strong className="text-slate-800 block mb-1">✓ After-Sales Warranty Support</strong>
-                  Maintaining installation records to honor our 3-to-5 year manufacturer warranty certificates.
+                  Maintaining installation records to honor our 10-year manufacturer replacement warranty certificates.
                 </div>
               </div>
             </section>
