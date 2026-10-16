@@ -80,8 +80,10 @@ export default function ServiceCategories() {
                   src={category.image}
                   alt={`Manikanta Safety Solutions - ${category.name} in Bangalore`}
                   fill
+                  loading="lazy"
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  quality={75}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent"></div>
 

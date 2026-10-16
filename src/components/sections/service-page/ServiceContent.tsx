@@ -105,8 +105,10 @@ export function ServiceImages({ name, image, supportingImages }: ImageCollagePro
               src={imagesList[0]}
               alt={`Manikanta Safety Solutions - ${name} main installation view in Bangalore`}
               fill
+              loading="lazy"
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover hover:scale-103 transition-transform duration-500"
+              quality={75}
             />
             <div className="absolute bottom-4 left-4 bg-slate-900/60 backdrop-blur-xs text-white text-xs font-semibold px-3 py-1.5 rounded-lg">
               Primary View
@@ -124,8 +126,10 @@ export function ServiceImages({ name, image, supportingImages }: ImageCollagePro
                   src={imgUrl}
                   alt={`Manikanta Safety Solutions - ${name} detail snapshot ${idx + 1}`}
                   fill
+                  loading="lazy"
                   sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover hover:scale-103 transition-transform duration-500"
+                  quality={75}
                 />
                 <div className="absolute bottom-3 left-3 bg-slate-900/60 backdrop-blur-xs text-white text-[10px] font-semibold px-2 py-1 rounded-md capitalize">
                   {idx === 0 ? "Material Detail" : idx === 1 ? "Anchor Points" : idx === 2 ? "Technician Test" : "Apartment Setup"}

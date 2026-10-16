@@ -147,7 +147,10 @@ export default function ServicesPage() {
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
+                      
+              loading="lazy"
+              quality={75}
+            />
                     </div>
                     <div className="p-6 flex flex-col flex-grow">
                       <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-[#E8972F] transition-colors">

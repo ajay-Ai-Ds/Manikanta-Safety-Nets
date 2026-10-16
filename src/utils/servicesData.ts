@@ -97,8 +97,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     aiOverview: "Manikanta Safety Solutions Balcony Safety Nets provide tested high-tensile fall containment utilizing weather-fortified virgin polymer mesh. Tailored for multi-story apartment towers across Bangalore, our setups guarantee reliable safety with uninterrupted natural breeze.",
     image: "/images/main-images/balcony-safetynets.webp",
     supportingImages: ["/images/services/balcony-work-real.jpg", "/images/materials/Balconynetwork.jpeg", "/images/hero/balconysafetynet.jpg"],
-    gallery: ["/images/services/service_balcony_net.png", "/images/services/balcony-work-real.jpg", "/images/materials/Balconynetwork.jpeg", "/images/hero/balconysafetynet.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    gallery: ["/images/services/service_balcony_net.webp", "/images/services/balcony-work-real.jpg", "/images/materials/Balconynetwork.jpeg", "/images/hero/balconysafetynet.jpg"],
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/balcony-work-real.jpg",
     benefits: [
       "100% Virgin UV-Stabilized HDPE Copolymer Webbing",
@@ -129,9 +129,9 @@ export const servicesData: Record<string, ServiceDetail> = {
     longDescription: "Give your family unconditional peace of mind with Manikanta Safety Solutions children safety netting. We fit high-density knotted barriers precisely along balcony railings, open window frames, and staircase banisters, transforming high-risk gaps into secure, child-friendly spaces where little ones can play freely without danger of accidental falls.",
     aiOverview: "Manikanta Safety Solutions Child Safety Nets deliver specialized high-tensile perimeter security for families residing in high-rise towers. Anchored with ultra-narrow pitch spacing, they completely seal dangerous railing intervals.",
     image: "/images/services/child.webp",
-    supportingImages: ["/images/services/service_children_net.png", "/images/materials/Balconynetwork.jpeg"],
-    gallery: ["/images/services/child.webp", "/images/services/service_children_net.png", "/images/materials/Balconynetwork.jpeg", "/images/hero/balconysafetynet.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    supportingImages: ["/images/services/service_children_net.webp", "/images/materials/Balconynetwork.jpeg"],
+    gallery: ["/images/services/child.webp", "/images/services/service_children_net.webp", "/images/materials/Balconynetwork.jpeg", "/images/hero/balconysafetynet.jpg"],
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/child.webp",
     benefits: [
       "Extra-Tight 25mm Mesh Size to Prevent Head and Limb Entrapment",
@@ -163,8 +163,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     aiOverview: "Manikanta Safety Solutions Pet Safety Nets are custom-tensioned containment barriers crafted from claw-resistant, reinforced synthetic polymer. They prevent domestic cats and dogs from slipping off high balconies.",
     image: "/images/services/pet-safetynets-real.jpeg",
     supportingImages: ["/images/services/pet-safetynets-real.jpeg", "/images/hero/pet.jpg"],
-    gallery: ["/images/services/pet-safetynets-real.jpeg", "/images/hero/pet.jpg", "/images/services/service_pet_net.png"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    gallery: ["/images/services/pet-safetynets-real.jpeg", "/images/hero/pet.jpg", "/images/services/service_pet_net.webp"],
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/pet-safetynets-real.jpeg",
     benefits: [
       "Claw-Proof & Scratch-Resistant Multi-Strand Polymer Twine",
@@ -195,9 +195,9 @@ export const servicesData: Record<string, ServiceDetail> = {
     longDescription: "Pigeons roosting around balconies, AC outdoor units, and building ducts cause severe hygiene risks, bad odors, and respiratory hazards. Manikanta Safety Solutions fits customized, translucent anti-pigeon netting that forms an impenetrable physical barrier, keeping your home spotless and bird-free without harming the birds in any way.",
     aiOverview: "Manikanta Safety Solutions Pigeon Safety Nets permanently block pigeons, sparrows, and pest birds from balcony ledges, AC compressors, and utility voids with humane, long-lasting mesh.",
     image: "/images/hero/pigeonnet.jpg",
-    supportingImages: ["/images/services/service_pigeon_net.png", "/images/materials/Balconynetwork.jpeg"],
-    gallery: ["/images/hero/pigeonnet.jpg", "/images/services/service_pigeon_net.png", "/images/materials/Balconynetwork.jpeg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    supportingImages: ["/images/services/service_pigeon_net.webp", "/images/materials/Balconynetwork.jpeg"],
+    gallery: ["/images/hero/pigeonnet.jpg", "/images/services/service_pigeon_net.webp", "/images/materials/Balconynetwork.jpeg"],
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/hero/pigeonnet.jpg",
     benefits: [
       "100% Translucent Netting – Barely Visible from Outside",
@@ -230,7 +230,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/monkey-safety-nets-real.jpg",
     supportingImages: ["/images/services/monkey-safety-nets-real.jpg", "/images/main-images/monkey-safety.webp"],
     gallery: ["/images/services/monkey-safety-nets-real.jpg", "/images/main-images/monkey-safety.webp", "/images/hero/monkeysafetynet.webp"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/monkey-safety-nets-real.jpg",
     benefits: [
       "Extra-Heavy 2.5mm to 3.0mm Knotted Polyethylene Cord",
@@ -263,7 +263,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/cricket-practice-net.jpg",
     supportingImages: ["/images/services/cricket-practice-net.jpg", "/images/materials/BoxCricketnet.jpeg"],
     gallery: ["/images/services/cricket-practice-net.jpg", "/images/materials/BoxCricketnet.jpeg", "/images/materials/FactoryNets.jpeg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/cricket-practice-net.jpg",
     benefits: [
       "Absorbs High-Velocity Leather Ball Impacts Without Tearing",
@@ -296,7 +296,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/main-images/Sports-Nets-3.jpg",
     supportingImages: ["/images/main-images/Sports-Nets-3.jpg", "/images/materials/BoxCricketnet.jpeg"],
     gallery: ["/images/materials/FactoryNets.jpeg", "/images/materials/BoxCricketnet.jpeg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/materials/FactoryNets.jpeg",
     benefits: [
       "Full Perimeter Enclosures for Futsal, Volleyball, and Tennis Courts",
@@ -329,7 +329,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/materials/FactoryNets.jpeg",
     supportingImages: ["/images/materials/FactoryNets.jpeg", "/images/materials/Balconynetwork.jpeg"],
     gallery: ["/images/materials/FactoryNets.jpeg", "/images/materials/Balconynetwork.jpeg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/materials/FactoryNets.jpeg",
     benefits: [
       "Certified Personnel Fall-Arrest Netting Supporting Heavy Impacts",
@@ -362,7 +362,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/main-images/duct-area-real.webp",
     supportingImages: ["/images/services/duct-area-real.webp", "/images/main-images/building-duct-pigeon-netting.jpg", "/images/services/duct-area-2.jpg", "/images/main-images/Duct-Area-3.jpg"],
     gallery: ["/images/services/building-duct-pigeon-netting.jpg", "/images/services/duct-area-real.webp", "/images/services/duct-area-2.jpg", "/images/main-images/Duct-Area-3.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/building-duct-pigeon-netting.jpg",
     benefits: [
       "Seals Vertical Building Shafts From Ground to Rooftop Parapets",
@@ -395,7 +395,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/bird-spikes-real.jpg",
     supportingImages: ["/images/services/bird-spikes-real.jpg", "/images/hero/service-spikes.jpg"],
     gallery: ["/images/services/bird-spikes-real.jpg", "/images/hero/service-spikes.jpg", "/images/hero/pigeonnet.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/bird-spikes-real.jpg",
     benefits: [
       "100% Stainless Steel SS304 Blunt-Tip Rods That Never Rust",
@@ -427,8 +427,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     aiOverview: "Manikanta Safety Solutions Mosquito Nets deliver custom-fitted micro-mesh insect screens for apartment windows, French doors, and balconies, ensuring 100% mosquito exclusion with unhindered natural airflow.",
     image: "/images/services/mosquito-net.jpg",
     supportingImages: ["/images/services/mosquito-net.jpg", "/images/services/window-grills-real.webp"],
-    gallery: ["/images/services/mosquito-net.jpg", "/images/services/window-grills-real.webp", "/images/services/service_window_grill.png"],
-    beforeImage: "/images/gallery/before_window.png",
+    gallery: ["/images/services/mosquito-net.jpg", "/images/services/window-grills-real.webp", "/images/services/service_window_grill.webp"],
+    beforeImage: "/images/gallery/before_window.webp",
     afterImage: "/images/services/mosquito-net.jpg",
     benefits: [
       "High-Grade SS304 & Fine Fiberglass Micro-Mesh Options",
@@ -461,7 +461,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/balcony-invisible-grills-real.jpg",
     supportingImages: ["/images/services/balcony-invisible-grills-real.jpg", "/images/main-images/Balcony-Grills.jpg"],
     gallery: ["/images/services/balcony-invisible-grills-real.jpg", "/images/main-images/Balcony-Grills.jpg", "/images/services/shyambalconygrills.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/shyambalconygrills.jpg",
     benefits: [
       "Genuine Marine-Grade SS316 Stainless Steel Wire Core (7x7)",
@@ -494,7 +494,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/shyamchildreninvisiblegrills.jpg",
     supportingImages: ["/images/services/shyamchildreninvisiblegrills.jpg", "/images/main-images/Balcony-Grills.jpg"],
     gallery: ["/images/services/shyamchildreninvisiblegrills.jpg", "/images/main-images/Balcony-Grills.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/shyamchildreninvisiblegrills.jpg",
     benefits: [
       "Ultra-Narrow 2-Inch (50mm) Cable Pitch Eliminates Toddler Squeeze Risks",
@@ -527,7 +527,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/shyampetinvisiblegrills.jpg",
     supportingImages: ["/images/services/shyampetinvisiblegrills.jpg", "/images/services/shyambalconygrills.jpg"],
     gallery: ["/images/services/shyampetinvisiblegrills.jpg", "/images/services/shyambalconygrills.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/shyampetinvisiblegrills.jpg",
     benefits: [
       "100% Chew-Proof & Claw-Resistant SS316 Marine Stainless Cables",
@@ -558,9 +558,9 @@ export const servicesData: Record<string, ServiceDetail> = {
     longDescription: "Transform dark, blocked windows with modern invisible window grills from Manikanta Safety Solutions. Anchored firmly into window lintels with powder-coated aluminium profiles, our stainless steel wire grills provide robust fall prevention and intruder deterrence while flooding your rooms with light and fresh breeze.",
     aiOverview: "Manikanta Safety Solutions Window Invisible Grills replace bulky metal window bars with sleek SS316 stainless cables, delivering safety without sacrificing natural ventilation.",
     image: "/images/services/window-grills-real.webp",
-    supportingImages: ["/images/services/window-grills-real.webp", "/images/services/service_window_grill.png"],
-    gallery: ["/images/services/window-grills-real.webp", "/images/services/service_window_grill.png", "/images/hero/windowgrill.webp"],
-    beforeImage: "/images/gallery/before_window.png",
+    supportingImages: ["/images/services/window-grills-real.webp", "/images/services/service_window_grill.webp"],
+    gallery: ["/images/services/window-grills-real.webp", "/images/services/service_window_grill.webp", "/images/hero/windowgrill.webp"],
+    beforeImage: "/images/gallery/before_window.webp",
     afterImage: "/images/services/window-grills-real.webp",
     benefits: [
       "Replaces Bulky Iron Bars with Sleek Architectural Stainless Wire Lines",
@@ -591,9 +591,9 @@ export const servicesData: Record<string, ServiceDetail> = {
     longDescription: "Duplex villas and commercial buildings with open stairwells present serious fall dangers for children and seniors. Manikanta Safety Solutions designs custom floor-to-ceiling vertical invisible grills that enclose stair voids elegantly while maintaining an airy, luxurious interior aesthetic.",
     aiOverview: "Manikanta Safety Solutions Staircase Invisible Grills secure high-risk open duplex stairs, atrium voids, and balconies with vertical marine-grade stainless cable runs.",
     image: "/images/services/Shayamstaircase-grills.jpg",
-    supportingImages: ["/images/services/service_staircase_grill.png", "/images/main-images/Balcony-Grills.jpg"],
-    gallery: ["/images/services/Shayamstaircase-grills.jpg", "/images/services/service_staircase_grill.png", "/images/main-images/Balcony-Grills.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    supportingImages: ["/images/services/service_staircase_grill.webp", "/images/main-images/Balcony-Grills.jpg"],
+    gallery: ["/images/services/Shayamstaircase-grills.jpg", "/images/services/service_staircase_grill.webp", "/images/main-images/Balcony-Grills.jpg"],
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/Shayamstaircase-grills.jpg",
     benefits: [
       "Complete Floor-to-Ceiling Void Protection for Duplex Staircases",
@@ -626,7 +626,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/ceiling-cloth-hangers-1.jpg",
     supportingImages: ["/images/services/ceiling-cloth-hangers-2.jpg", "/images/services/cloth-hangers-real.jpg"],
     gallery: ["/images/services/ceiling-cloth-hangers-1.jpg", "/images/services/ceiling-cloth-hangers-2.jpg", "/images/services/cloth-hangers-real.jpg", "/images/main-images/clothhanger-work.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/ceiling-cloth-hangers-1.jpg",
     benefits: [
       "Reclaims 100% of Balcony Walkway and Floor Space",
@@ -659,7 +659,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/ceiling-cloth-hangers-2.jpg",
     supportingImages: ["/images/services/cloth-hangers-real.jpg", "/images/main-images/cloth-Hangers3.jpg"],
     gallery: ["/images/services/ceiling-cloth-hangers-2.jpg", "/images/services/cloth-hangers-real.jpg", "/images/main-images/cloth-Hangers3.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/ceiling-cloth-hangers-2.jpg",
     benefits: [
       "Designed Specifically for Compact High-Rise Apartment Balconies",
@@ -692,7 +692,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     image: "/images/services/cloth-hangers-real.jpg",
     supportingImages: ["/images/services/cloth-hangers-real.jpg", "/images/main-images/clothhanger-work.jpg"],
     gallery: ["/images/services/cloth-hangers-real.jpg", "/images/main-images/clothhanger-work.jpg", "/images/main-images/clothhangerwork2.jpg"],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/cloth-hangers-real.jpg",
     benefits: [
       "Folds 100% Flat Against the Wall When Not in Use (Extends Just 2 Inches)",

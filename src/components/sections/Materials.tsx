@@ -126,8 +126,10 @@ export default function Materials() {
                   src={item.image}
                   alt={`Manikanta Safety Solutions - ${item.name}`}
                   fill
+                  loading="lazy"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  quality={75}
                 />
               </div>
               {/* Specifications Content */}

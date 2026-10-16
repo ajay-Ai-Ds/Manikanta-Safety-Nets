@@ -77,8 +77,10 @@ export default function Team() {
                 src={item.image}
                 alt={`Manikanta Safety Solutions - ${item.caption} in Bangalore`}
                 fill
+                loading="lazy"
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
+                quality={75}
               />
 
               {/* Gradient Overlay */}

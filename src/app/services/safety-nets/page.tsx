@@ -117,7 +117,10 @@ export default function SafetyNetsCategoryPage() {
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                
+              loading="lazy"
+              quality={75}
+            />
                 <div className="absolute top-3 right-3 bg-[#E8972F] text-slate-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow-md animate-pulse flex items-center gap-1">
                   <Percent className="w-3 h-3" />
                   <span>Flat 20% OFF</span>

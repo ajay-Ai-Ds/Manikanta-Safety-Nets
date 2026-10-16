@@ -125,8 +125,10 @@ export default function HeroCarousel() {
             alt={s.altText}
             fill
             priority={idx === 0}
-            sizes="100vw"
+            loading={idx === 0 ? "eager" : "lazy"}
+            sizes="(max-width: 768px) 100vw, 100vw"
             className="object-cover object-center"
+            quality={75}
           />
           {/* Clean Natural Scrim Overlay: Eliminates heavy green/teal tint so real installations are crisp and visible */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent sm:via-black/25" />

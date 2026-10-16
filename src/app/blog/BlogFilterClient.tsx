@@ -93,7 +93,10 @@ export default function BlogFilterClient({ initialPosts }: BlogFilterClientProps
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-103"
-                />
+                
+              loading="lazy"
+              quality={75}
+            />
               </div>
 
               {/* Body */}

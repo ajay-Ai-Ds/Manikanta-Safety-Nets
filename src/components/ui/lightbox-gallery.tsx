@@ -63,8 +63,10 @@ export default function LightboxGallery({ images, serviceName }: LightboxGallery
               src={imgUrl}
               alt={`Manikanta Safety Solutions - ${serviceName} installation snapshot ${index + 1}`}
               fill
+              loading="lazy"
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"
+              quality={75}
             />
             {/* Hover overlay magnifying effect */}
             <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -121,6 +123,7 @@ export default function LightboxGallery({ images, serviceName }: LightboxGallery
                 fill
                 sizes="100vw"
                 className="object-contain"
+                quality={85}
               />
             </motion.div>
 

@@ -173,7 +173,10 @@ export default function CaseStudiesClient() {
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover transition-transform duration-500 hover:scale-105"
-                />
+                
+              loading="lazy"
+              quality={75}
+            />
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
                   <span className="bg-[#0D5C5C]/90 text-white text-xs font-bold px-3 py-1.5 rounded-full backdrop-blur-md border border-white/20 shadow-sm self-start">
                     {study.serviceCategory}

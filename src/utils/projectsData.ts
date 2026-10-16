@@ -53,7 +53,7 @@ export const projectsData: Record<string, ProjectDetail> = {
       "/images/services/child.webp",
       "/images/materials/FactoryNets.jpeg",
     ],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/materials/Balconynetwork.jpeg",
     specs: [
       { label: "Mesh Specification", value: "30mm x 30mm Copolymer HDPE" },
@@ -94,7 +94,7 @@ export const projectsData: Record<string, ProjectDetail> = {
       "/images/services/shyamchildreninvisiblegrills.jpg",
       "/images/services/Shayamstaircase-grills.jpg",
     ],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/services/shyambalconygrills.jpg",
     specs: [
       { label: "Cable Composition", value: "SS316 Marine Stainless (Bite & Rust Proof)" },
@@ -135,7 +135,7 @@ export const projectsData: Record<string, ProjectDetail> = {
       "/images/materials/clothhangerwork.jpeg",
       "/images/main-images/clothhangerwork2.jpg",
     ],
-    beforeImage: "/images/gallery/before_balcony.png",
+    beforeImage: "/images/gallery/before_balcony.webp",
     afterImage: "/images/materials/clothhangerwork.jpeg",
     specs: [
       { label: "Rod Configuration", value: "6 Independent SS304 Tubes (6 ft each)" },

@@ -168,8 +168,10 @@ export default function FeaturedServices() {
                             src={service.image}
                             alt={`Manikanta Safety Solutions - ${service.name} Installation in Bangalore, Karnataka`}
                             fill
+                            loading="lazy"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            quality={75}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-black/10 pointer-events-none" />
 

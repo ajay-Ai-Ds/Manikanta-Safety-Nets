@@ -33,7 +33,7 @@ export default function BeforeAfter() {
           >
             <div className="relative h-72 sm:h-96 w-full">
               <Image
-                src="/images/gallery/before_balcony.png"
+                src="/images/gallery/before_balcony.webp"
                 alt="Unprotected high-rise balcony with dangerous open railing gaps in Bangalore"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
