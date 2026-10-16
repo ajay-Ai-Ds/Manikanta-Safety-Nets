@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Ceiling Cloth Hangers | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Rust-proof ceiling-mounted pulley cloth drying hangers installed in balconies and utility spaces by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/services/cloth-hangers",
+    url: "https://manikantasafetysolutions.in/services/cloth-hangers",
     images: [
       {
         url: "/images/og-image.webp",
@@ -46,19 +46,19 @@ export default function ClothHangersCategoryPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.manikantasafetysolutions.com",
+        "item": "https://www.manikantasafetysolutions.in",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.manikantasafetysolutions.com/services",
+        "item": "https://www.manikantasafetysolutions.in/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Cloth Hangers",
-        "item": "https://www.manikantasafetysolutions.com/services/cloth-hangers",
+        "item": "https://www.manikantasafetysolutions.in/services/cloth-hangers",
       },
     ],
   };

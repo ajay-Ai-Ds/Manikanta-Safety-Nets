@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Balcony & Safety Nets | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "High-tensile UV-treated balcony safety nets, pigeon nets, child protection nets, and pet safety nets installed by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/services/safety-nets",
+    url: "https://manikantasafetysolutions.in/services/safety-nets",
     images: [
       {
         url: "/images/og-image.webp",
@@ -46,19 +46,19 @@ export default function SafetyNetsCategoryPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.manikantasafetysolutions.com",
+        "item": "https://www.manikantasafetysolutions.in",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.manikantasafetysolutions.com/services",
+        "item": "https://www.manikantasafetysolutions.in/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Safety Nets",
-        "item": "https://www.manikantasafetysolutions.com/services/safety-nets",
+        "item": "https://www.manikantasafetysolutions.in/services/safety-nets",
       },
     ],
   };

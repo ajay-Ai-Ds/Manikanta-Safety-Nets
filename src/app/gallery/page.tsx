@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Photo Gallery | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Browse photos of safety nets, invisible grills, anti-bird spikes, and ceiling cloth hangers installed by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/gallery",
+    url: "https://manikantasafetysolutions.in/gallery",
     images: [
       {
         url: "/images/og-image.webp",
@@ -44,7 +44,7 @@ export default function GalleryPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Photo Gallery | Manikanta Safety Solutions",
-    "url": "https://manikantasafetysolutions.com/gallery",
+    "url": "https://manikantasafetysolutions.in/gallery",
     "description": "Photo archives of completed netting and invisible grill setups by Manikanta Safety Solutions in Bangalore across Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
   };
 

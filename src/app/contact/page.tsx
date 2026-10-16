@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Contact Us | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore",
     description:
       "Schedule a complimentary on-site measurement or speak directly with our safety engineering team in Bangalore. Call +91 95503 18183 for instant assistance.",
-    url: "https://manikantasafetysolutions.com/contact",
+    url: "https://manikantasafetysolutions.in/contact",
     images: [
       {
         url: "/images/og-image.webp",

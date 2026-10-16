@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Invisible Grills | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Stainless steel 316 marine-grade invisible grills for balconies, windows, and staircases by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/services/invisible-grills",
+    url: "https://manikantasafetysolutions.in/services/invisible-grills",
     images: [
       {
         url: "/images/og-image.webp",
@@ -46,19 +46,19 @@ export default function InvisibleGrillsCategoryPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.manikantasafetysolutions.com",
+        "item": "https://www.manikantasafetysolutions.in",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.manikantasafetysolutions.com/services",
+        "item": "https://www.manikantasafetysolutions.in/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Invisible Grills",
-        "item": "https://www.manikantasafetysolutions.com/services/invisible-grills",
+        "item": "https://www.manikantasafetysolutions.in/services/invisible-grills",
       },
     ],
   };

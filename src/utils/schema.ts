@@ -48,9 +48,9 @@ export function generateOrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Manikanta Safety Solutions",
-    "url": "https://manikantasafetysolutions.com",
-    "logo": "https://manikantasafetysolutions.com/images/logo/manikanta-safety-solutions-logo-light.svg",
-    "image": "https://manikantasafetysolutions.com/images/og-image.webp",
+    "url": "https://manikantasafetysolutions.in",
+    "logo": "https://manikantasafetysolutions.in/images/logo/manikanta-safety-solutions-logo-light.svg",
+    "image": "https://manikantasafetysolutions.in/images/og-image.webp",
     "contactPoint": [
       {
         "@type": "ContactPoint",
@@ -78,16 +78,16 @@ export function generateLocalBusinessSchema(areaName?: string) {
   return {
     "@context": "https://schema.org",
     "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
-    "@id": `https://manikantasafetysolutions.com/#localbusiness${areaName ? `-${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
+    "@id": `https://manikantasafetysolutions.in/#localbusiness${areaName ? `-${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
     "name": areaName ? `Manikanta Safety Solutions - ${areaName}` : "Manikanta Safety Solutions",
     "url": areaName
-      ? `https://manikantasafetysolutions.com/areas/${areaName.toLowerCase().replace(/\s+/g, "-")}`
-      : "https://manikantasafetysolutions.com",
+      ? `https://manikantasafetysolutions.in/areas/${areaName.toLowerCase().replace(/\s+/g, "-")}`
+      : "https://manikantasafetysolutions.in",
     "telephone": "+91 95503 18183",
     "alternatePhone": "+91 70138 18183",
     "email": "info.manikantasafetynets@gmail.com",
-    "image": "https://manikantasafetysolutions.com/images/og-image.webp",
-    "logo": "https://manikantasafetysolutions.com/images/logo/manikanta-safety-solutions-logo-light.svg",
+    "image": "https://manikantasafetysolutions.in/images/og-image.webp",
+    "logo": "https://manikantasafetysolutions.in/images/logo/manikanta-safety-solutions-logo-light.svg",
     "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
@@ -168,7 +168,7 @@ export function generateServiceProductSchema(serviceName: string, serviceSlug: s
       "highPrice": "180",
       "offerCount": "100+",
       "availability": "https://schema.org/InStock",
-      "url": `https://manikantasafetysolutions.com/services/${serviceSlug}`,
+      "url": `https://manikantasafetysolutions.in/services/${serviceSlug}`,
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -185,12 +185,12 @@ export function generateWebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Manikanta Safety Solutions",
-    "url": "https://manikantasafetysolutions.com",
+    "url": "https://manikantasafetysolutions.in",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://manikantasafetysolutions.com/search?q={search_term_string}",
+        "urlTemplate": "https://manikantasafetysolutions.in/search?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -207,7 +207,7 @@ export function generateBreadcrumbSchema(items: SchemaBreadcrumb[]) {
       "name": crumb.name,
       "item": crumb.item.startsWith("http")
         ? crumb.item
-        : `https://manikantasafetysolutions.com${crumb.item}`,
+        : `https://manikantasafetysolutions.in${crumb.item}`,
     })),
   };
 }
@@ -224,7 +224,7 @@ export function generateServiceSchema(serviceName: string, categoryName?: string
       "name": "Manikanta Safety Solutions",
       "telephone": "+91 95503 18183",
       "email": "info.manikantasafetynets@gmail.com",
-      "url": "https://manikantasafetysolutions.com",
+      "url": "https://manikantasafetysolutions.in",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Bangalore, Karnataka",
@@ -259,7 +259,7 @@ export function generateServiceAreaSchema(serviceName: string, areaName: string)
       "name": "Manikanta Safety Solutions",
       "telephone": "+91 95503 18183",
       "email": "info.manikantasafetynets@gmail.com",
-      "url": "https://manikantasafetysolutions.com",
+      "url": "https://manikantasafetysolutions.in",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": `${areaName}, Bangalore, Karnataka`,
@@ -305,8 +305,8 @@ export function generateAggregateRatingSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Manikanta Safety Solutions",
-    "url": "https://manikantasafetysolutions.com",
-    "image": "https://manikantasafetysolutions.com/images/og-image.webp",
+    "url": "https://manikantasafetysolutions.in",
+    "image": "https://manikantasafetysolutions.in/images/og-image.webp",
     "telephone": "+91 95503 18183",
     "priceRange": "₹₹",
     "address": {
@@ -349,7 +349,7 @@ export function generateArticleSchema(
       "@type": "Article",
       "headline": article.title,
       "description": article.description,
-      "mainEntityOfPage": article.slug ? `https://manikantasafetysolutions.com/blog/${article.slug}` : "https://manikantasafetysolutions.com",
+      "mainEntityOfPage": article.slug ? `https://manikantasafetysolutions.in/blog/${article.slug}` : "https://manikantasafetysolutions.in",
       "datePublished": article.datePublished,
       "dateModified": article.datePublished,
       "author": {
@@ -361,10 +361,10 @@ export function generateArticleSchema(
         "name": "Manikanta Safety Solutions",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://manikantasafetysolutions.com/images/logo/manikanta-safety-solutions-logo-light.svg",
+          "url": "https://manikantasafetysolutions.in/images/logo/manikanta-safety-solutions-logo-light.svg",
         },
       },
-      "image": article.image || "https://manikantasafetysolutions.com/images/og-image.webp",
+      "image": article.image || "https://manikantasafetysolutions.in/images/og-image.webp",
     };
   }
 
@@ -373,7 +373,7 @@ export function generateArticleSchema(
     "@type": "Article",
     "headline": articleOrTitle,
     "description": description || "",
-    "mainEntityOfPage": "https://manikantasafetysolutions.com",
+    "mainEntityOfPage": "https://manikantasafetysolutions.in",
     "datePublished": datePublished || new Date().toISOString(),
     "dateModified": datePublished || new Date().toISOString(),
     "author": {
@@ -385,9 +385,9 @@ export function generateArticleSchema(
       "name": "Manikanta Safety Solutions",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://manikantasafetysolutions.com/images/logo/manikanta-safety-solutions-logo-light.svg",
+        "url": "https://manikantasafetysolutions.in/images/logo/manikanta-safety-solutions-logo-light.svg",
       },
     },
-    "image": image || "https://manikantasafetysolutions.com/images/og-image.webp",
+    "image": image || "https://manikantasafetysolutions.in/images/og-image.webp",
   };
 }

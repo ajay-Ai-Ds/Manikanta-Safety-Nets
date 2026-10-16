@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Case Studies | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Explore case studies & real installation projects by Manikanta Safety Solutions across Bangalore, including Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/case-studies",
+    url: "https://manikantasafetysolutions.in/case-studies",
     images: [
       {
         url: "/images/og-image.webp",

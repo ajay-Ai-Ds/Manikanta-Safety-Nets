@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         "/_next/",
       ],
     },
-    sitemap: "https://manikantasafetysolutions.com/sitemap.xml",
+    sitemap: "https://manikantasafetysolutions.in/sitemap.xml",
   };
 }

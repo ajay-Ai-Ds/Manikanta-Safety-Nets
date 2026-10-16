@@ -20,10 +20,10 @@ export default function Home() {
   const searchActionSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://manikantasafetysolutions.com",
+    "url": "https://manikantasafetysolutions.in",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://manikantasafetysolutions.com/search?q={search_term_string}",
+      "target": "https://manikantasafetysolutions.in/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

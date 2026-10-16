@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Customer Reviews & Testimonials | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Read 150+ verified reviews for Manikanta Safety Solutions across Bangalore, including Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/testimonials",
+    url: "https://manikantasafetysolutions.in/testimonials",
     images: [
       {
         url: "/images/og-image.webp",

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Pricing Guide & Estimation | Manikanta Safety Solutions Bangalore, Karnataka",
     description:
       "Transparent per-square-foot pricing for balcony safety nets, SS316 invisible grills & drying hangers by Manikanta Safety Solutions in Whitefield, Koramangala, Indiranagar, and all across Bangalore.",
-    url: "https://manikantasafetysolutions.com/pricing",
+    url: "https://manikantasafetysolutions.in/pricing",
     images: [
       {
         url: "/images/og-image.webp",

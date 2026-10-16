@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Our Services | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Explore 18+ safety net solutions, invisible grills, and ceiling cloth hangers by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/services",
+    url: "https://manikantasafetysolutions.in/services",
     images: [
       {
         url: "/images/og-image.webp",
@@ -71,13 +71,13 @@ export default function ServicesPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.manikantasafetysolutions.com",
+        "item": "https://www.manikantasafetysolutions.in",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://www.manikantasafetysolutions.com/services",
+        "item": "https://www.manikantasafetysolutions.in/services",
       },
     ],
   };

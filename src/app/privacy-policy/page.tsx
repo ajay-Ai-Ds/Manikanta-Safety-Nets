@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Manikanta Safety Solutions",
     description:
       "Official privacy policy regarding customer inquiries, free site visits, and data protection for Manikanta Safety Solutions across Bangalore.",
-    url: "https://manikantasafetysolutions.com/privacy-policy",
+    url: "https://manikantasafetysolutions.in/privacy-policy",
     images: [
       {
         url: "/images/og-image.webp",
@@ -106,7 +106,7 @@ export default function PrivacyPolicyPage() {
                 Introduction &amp; Scope
               </h2>
               <p>
-                Manikanta Safety Solutions (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting the privacy and personal data of homeowners, property managers, and commercial clients visiting our website (<strong>https://manikantasafetysolutions.com</strong>) and utilizing our professional safety netting, invisible grills, and bird control services across Bangalore.
+                Manikanta Safety Solutions (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting the privacy and personal data of homeowners, property managers, and commercial clients visiting our website (<strong>https://manikantasafetysolutions.in</strong>) and utilizing our professional safety netting, invisible grills, and bird control services across Bangalore.
               </p>
             </section>
 

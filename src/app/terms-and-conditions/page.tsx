@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Terms & Conditions | Manikanta Safety Solutions",
     description:
       "Review terms of service, transparent pricing, warranty commitments, and safety installation policies for Manikanta Safety Solutions across Bangalore.",
-    url: "https://manikantasafetysolutions.com/terms-and-conditions",
+    url: "https://manikantasafetysolutions.in/terms-and-conditions",
     images: [
       {
         url: "/images/og-image.webp",

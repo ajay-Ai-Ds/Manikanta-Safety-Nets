@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "About Us | Manikanta Safety Solutions - High-Rise Safety Net & Invisible Grill Specialists Bangalore",
     description:
       "Learn about Manikanta Safety Solutions, founded by Manikanta in Bangalore. Discover our engineering-grade balcony safety netting, SS316 marine invisible grills, and certified installation standards.",
-    url: "https://manikantasafetysolutions.com/about",
+    url: "https://manikantasafetysolutions.in/about",
     images: [
       {
         url: "/images/og-image.webp",

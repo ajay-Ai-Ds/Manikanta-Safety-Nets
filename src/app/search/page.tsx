@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Search | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Search across Manikanta Safety Solutions balcony safety nets, invisible grills, anti-bird netting, and service locations in Bangalore.",
-    url: "https://manikantasafetysolutions.com/search",
+    url: "https://manikantasafetysolutions.in/search",
     images: [
       {
         url: "/images/og-image.webp",

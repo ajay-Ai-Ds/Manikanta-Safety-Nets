@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Completed Projects | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "View completed safety net and invisible grill installation projects by Manikanta Safety Solutions across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/projects",
+    url: "https://manikantasafetysolutions.in/projects",
     images: [
       {
         url: "/images/og-image.webp",

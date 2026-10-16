@@ -5,7 +5,7 @@ import { projectsData } from "@/utils/projectsData";
 import { blogData } from "@/utils/blogData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://manikantasafetysolutions.com";
+  const baseUrl = "https://manikantasafetysolutions.in";
 
   // 1. Static Pages
   const staticRoutes = [

@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PageProps) {
     openGraph: {
       title,
       description,
-      url: `https://manikantasafetysolutions.com/blog/${resolvedParams.slug}`,
+      url: `https://manikantasafetysolutions.in/blog/${resolvedParams.slug}`,
       images: [
         {
           url: post.image,

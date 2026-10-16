@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     "Invisible Grills Whitefield",
     "Invisible Grills Koramangala",
   ],
-  metadataBase: new URL("https://manikantasafetysolutions.com"),
+  metadataBase: new URL("https://manikantasafetysolutions.in"),
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
   },
@@ -60,22 +60,18 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
       { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
-      { url: "/favicon.png", type: "image/png", sizes: "512x512" },
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/icon.svg",
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
     ],
   },
   openGraph: {
     title: "Manikanta Safety Solutions | Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Expert safety netting and modern invisible grill installation in Bangalore across Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, Jayanagar, Yelahanka, JP Nagar, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com",
+    url: "https://manikantasafetysolutions.in",
     siteName: "Manikanta Safety Solutions",
     images: [
       {
@@ -107,12 +103,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Favicon fallback tags for all browsers & search engines */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        {/* Favicon SVG tag */}
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
       </head>
       <body
         className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900 flex flex-col min-h-screen selection:bg-[#E8972F] selection:text-white`}

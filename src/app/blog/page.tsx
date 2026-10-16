@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Safety & Childproofing Blog | Manikanta Safety Solutions - Safety Nets & Invisible Grills Bangalore, Karnataka",
     description:
       "Expert guides on safety nets, invisible grills, and bird exclusion across Bangalore: Whitefield, Koramangala, Indiranagar, HSR Layout, Electronic City, Marathahalli, and Sarjapur Road.",
-    url: "https://manikantasafetysolutions.com/blog",
+    url: "https://manikantasafetysolutions.in/blog",
     images: [
       {
         url: "/images/og-image.webp",
@@ -48,7 +48,7 @@ export default async function BlogPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Safety and Home Childproofing Blog | Manikanta Safety Solutions",
-    "url": "https://manikantasafetysolutions.com/blog",
+    "url": "https://manikantasafetysolutions.in/blog",
     "description": "Resources on balcony netting, invisible grills, and safety advice across Bangalore.",
   };
 
