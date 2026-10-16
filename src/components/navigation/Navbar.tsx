@@ -16,7 +16,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Logo from "../ui/Logo";
+import Image from "next/image";
 
 const safetyNetsServices = [
   { name: "Balcony Safety Nets", href: "/services/balcony-safety-nets" },
@@ -175,7 +175,14 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* LOGO */}
             <div className="flex items-center shrink-0">
-              <Logo />
+              <Image
+                src="/images/main-images/Manikanta/manikanta-safety-solutions-logo.webp"
+                alt="Manikanta Safety Solutions - Safety Nets and Invisible Grills"
+                width={200}
+                height={80}
+                className="h-10 w-auto object-contain"
+                priority
+              />
             </div>
 
             {/* DESKTOP NAVIGATION LINKS WITH THIN RED UNDERLINE ANIMATION */}
