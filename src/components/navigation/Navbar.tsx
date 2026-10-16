@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import logoImg from "@/public/images/main-images/Manikanta/manikanta-safety-solutions-logo.webp";
 
 const safetyNetsServices = [
   { name: "Balcony Safety Nets", href: "/services/balcony-safety-nets" },
@@ -176,7 +177,7 @@ export default function Navbar() {
             {/* LOGO */}
             <div className="flex items-center shrink-0">
               <Image
-                src="/images/main-images/Manikanta/manikanta-safety-solutions-logo.webp"
+                src={logoImg}
                 alt="Manikanta Safety Solutions - Safety Nets and Invisible Grills"
                 width={200}
                 height={80}
